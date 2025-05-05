@@ -1,0 +1,330 @@
+
+/* Стилизация основной секции */
+.wrapper-section {
+    padding: 2vh 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.section-of-profile-information {
+    border: 1px solid var(--grey-color--);
+    background-color: var(--white-color--); 
+    width: 100%;
+    padding: 10px 20px 50px 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+.profile-and-setting {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile {
+    color: var(--blue-color--);
+}
+.setting {
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--grey-color--);
+    border-radius: 5px;
+    transition: .3s;
+}
+.setting:hover .setting-icon {
+    color: var(--orange-color--);
+}
+/* Стилизация модельного окна редактирования данных пользователя */
+#edit-info-modal {
+    display: none; 
+    position: fixed; 
+    z-index: 100000;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+.modal-content {
+    background-color: var(--white-color--);
+    padding: 20px;
+    border: 1px solid var(--grey-color--);
+    width: 80%; 
+    max-width: 800px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.close {
+    color: var(--grey-color--); 
+    width: 100%; 
+    text-align: right;
+    font-size: 28px; 
+    font-weight: bold; 
+}
+
+.close:hover,
+.close:focus {
+    color: var(--black-color--);
+    text-decoration: none; 
+    cursor: pointer; 
+}
+.main-info-modal {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.edit-info-attention {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(255, 212, 214);
+    padding: 0 10px;
+    border-left: 4px solid var(--orange-color--);
+}
+.edit-info-head {
+    margin: 0;
+    color: var(--blue-color--);
+}
+.attention-symbol {
+    width: 30px;
+    height: 30px;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1000px;
+    border: 2px solid var(--orange-color--);
+    background-color: rgb(255, 179, 182);
+    color: var(--orange-color--);
+    font-weight: 700;
+    font-size: 18px;
+}
+.edit-info-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+}
+.input-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.input-block h4 {
+    margin: 0;
+    font-weight: 600;
+}
+.input {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+.input > img {
+    position: absolute;
+    left: 5px;
+    
+}
+.input > input {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--grey-color--);
+    padding: 0 10px 0 30px;
+}
+.save {
+    width: 50%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--second-blue-color--);
+    color: var(--white-color--);
+    padding: 10px 0;
+    font-weight: 700;
+    transition: .3s;
+}
+.save:hover {
+    background-color: var(--orange-color--);
+    border: 1px solid var(--grey-color--);
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.img-block {
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-block img {
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+    min-width: 100px;
+}
+.name-mail-address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.name {
+    margin: 0;
+}
+.email {
+    color: var(--link-color--);
+}
+
+/* Стилизация следующей секции */
+.pays-communication-actions {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+}
+.activity-blocks {
+    flex: 1 1 auto; /* Блоки будут занимать равное пространство, но не будут растягиваться */
+    min-width: 200px; /* Минимальная ширина блока */
+    border-radius: 10px;
+    border: 1px solid var(--grey-color--);
+    background-color: var(--white-color--);
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 15px;
+}
+.activity-blocks h4 {
+    margin: 0;
+}
+.activity-btn {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--grey-color--);
+    gap: 5px;
+    cursor: pointer;
+    height: 50px;
+}
+.exit-btn {
+    background-color: var(--orange-color--);
+    color: var(--white-color--);
+}
+/* Стилизация секции последних заказов */
+.last-order-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--grey-color--);
+    background-color: var(--white-color--);
+}
+.last-order-head {
+    color: var(--blue-color--);
+}
+.view-all {
+    color: var(--link-color--);
+    transition: .3s;
+}
+.view-all:hover {
+    text-decoration: underline;
+}
+.order-blocks {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.order {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+    cursor: pointer;
+}
+.order:nth-child(even) {
+    background-color: var(--second-grey-color--);
+}
+.left-block {
+    display: flex;
+    gap: 10px;
+}
+.img-block-box {
+    width: 60px;
+}
+.order-info-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: max-content;
+}
+.order-num {
+    width: max-content;
+    margin: 0;
+}
+.get-status, .time-status {
+    display: flex;
+    gap: 5px;
+    width: 100px;
+} 
+.text {
+    font-size: 15px;
+    margin: 0;
+}
+.delivery-block {
+    display: flex;
+    gap: 20px;
+}
+.right-block {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: left;
+    gap: 10px;
+}
+.price {
+    font-weight: 700;
+    margin: 0;
+}
+.status {
+    margin: 0;
+    color: var(--link-color--);
+}
+@media (max-width: 600px) {
+    .img-block-box {
+        display: none;
+    }
+    .order {
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+    }
+    .right-block {
+        align-items: start;
+    }
+    .status {
+        display: none;
+    }
+}
+

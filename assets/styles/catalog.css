@@ -1,0 +1,187 @@
+
+/* Стилизация основной секции */
+.wrapper {
+    padding: 3vh 3vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.wrapper-head {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+}
+.catalog-and-select {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.catalog {
+    color: var(--blue-color--);
+}
+.input-block {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+.search-btn {
+    position: absolute;
+    right: 1px;
+    height: 95%;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+}
+.search-btn:hover {
+    background-color: var(--blue-color--);
+}
+.input-block > input {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--grey-color--);
+    padding: 0 130px 0 10px;
+}
+select {
+    border-radius: 10px;
+    border: 1px solid var(--grey-color--);;
+    height: 40px;
+    padding: 0 0 0 10px;
+}
+.wrapper-body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.tovar-card {
+    position: relative;
+    border: 1px solid var(--grey-color--);
+    background-color: var(--white-color--);
+    border-radius: 10px;
+    box-shadow: 5px 3px 7px var(--grey-color--);
+    padding: 15px;
+    width: 300px;
+    height: 550px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.tovar-name {
+    margin: 0;
+}
+.tovar-info-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.tovar-price {
+    font-weight: bold;
+}
+
+.tovar-description {
+    color: var(--link-color--); 
+}
+.in-basket {
+    margin-top: 20px;
+    background-color: var(--blue-color--);
+    color: var(--white-color--);
+    border-radius: 5px;
+    border: none;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: .2s;
+}
+.in-basket:hover {
+    background-color: var(--orange-color--);
+}
+.name-and-like {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.like-container {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    transition: 100ms;
+  }
+.like-container input {
+    opacity: 0;
+    cursor: pointer;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transition: 100ms;
+    animation: dislike_effect 400ms ease;
+}
+  
+.like-container input:checked ~ .checkmark path {
+    fill: var(--orange-color--);
+    stroke-width: 0;
+}
+  
+.like-container input:checked ~ .checkmark {
+    animation: like_effect 400ms ease;
+}
+  
+.like-container:hover {
+    transform: scale(1.1);
+}
+  
+@keyframes like_effect {
+    0% {
+      transform: scale(0);
+    }
+  
+    50% {
+      transform: scale(1.2);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+}
+  
+@keyframes dislike_effect {
+    0% {
+      transform: scale(0);
+    }
+  
+    50% {
+      transform: scale(1.2);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+}
+  
+
+@media (max-width: 762px) {
+    .tovar-card {
+        width: 100%;
+        height: max-content;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 3%;
+
+    }
+    .tovar-image {
+        width: 30%;
+        height: auto;
+        border-radius: 10px;
+    }
+}

@@ -1,0 +1,111 @@
+
+/* Стилизация основной секции */
+.wrapper {
+    padding: 3vh 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sign-in-form {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white-color--);
+    gap: 20px;
+    padding: 30px 20px;
+    box-shadow: 5px 3px 7px var(--grey-color--);    
+    border-radius: 10px;
+}
+.input-block {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+.input-block > img {
+    position: absolute;
+    left: 5px;
+    
+}
+.input-block > input {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--grey-color--);
+    padding: 0 10px 0 30px;
+}
+.sign-in {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--second-blue-color--);
+    color: var(--white-color--);
+    padding: 10px 0;
+    font-weight: 700;
+    transition: .3s;
+}
+.sign-in:hover {
+    background-color: var(--white-color--);
+    color: var(--black-color--);
+    border: 1px solid var(--grey-color--);
+}
+.or-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+}
+
+.or-block > label {
+    color: var(--link-color--);
+    white-space: nowrap; 
+}
+
+.line {
+    height: 1px;
+    flex: 1; 
+    background-color: var(--link-color--);
+}
+.google, .vk {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid var(--link-color--);
+    background: transparent;
+    padding: 10px 0;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+.google:hover, .vk:hover {
+    background-color: var(--second-blue-color--);
+    color: var(--white-color--);
+}
+.social-icon {
+    width: 20px;
+}
+.no-account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.no-account > label {
+    color: var(--grey-color--);
+}
+.no-account a {
+    color: var(--second-blue-color--);
+    transition: .3s;
+}
+.no-account a:hover {
+    text-decoration: underline;
+}

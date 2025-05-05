@@ -1,0 +1,29 @@
+/* Подключение шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Yellowtail&display=swap');
+
+/* Применение общих стилей */
+html, body {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    background-color: var(--body-bg-color--);
+}
+* {
+    font-family: system-ui;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* Создание переменных */
+:root {
+    --blue-color--: #1B335A;
+    --second-blue-color--: #457B9D;
+    --orange-color--: #E53A43;
+    --white-color--: #ffffff;
+    --link-color--: #686666;
+    --grey-color--: #cecece;
+    --second-grey-color--: #F3F3F3;
+    --footer-color--: #111828;
+    --black-color--: #000;
+    --body-bg-color--: #F9FAFC;
+}

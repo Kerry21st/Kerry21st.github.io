@@ -1,0 +1,354 @@
+
+/* Стилизация основной секции */
+.wrapper {
+    width: 100%;
+    padding: 2vh 3vw;
+    display: flex;
+    flex-direction: column;
+}
+.basket-head {
+    color: var(--blue-color--);
+}
+.main-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+
+}
+.tovar-section {
+    flex: 1 1 60%;
+    border : 1px solid var(--grey-color--);
+    box-shadow: 3px 4px 4px var(--grey-color--);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px ;
+    background-color: var(--white-color--);
+}
+.tovar-section-head {
+    border-top-left-radius: 10px;  /* Верхний левый угол */
+    border-top-right-radius: 10px; /* Верхний правый угол */
+}
+.tovar-section-head h1 {
+    font-weight: 700;
+    color: var(--blue-color--);
+}
+.line-1 {
+    margin-bottom: 20px;
+}
+/* Стилизация карточки товара */
+.tovar-cards-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.tovar-card {
+    position: relative;
+    border: 1px solid var(--grey-color--);
+    background-color: var(--white-color--);
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+.tovar-image {
+    width: 15%;
+    min-width: 90px;
+    height: auto;
+    border-radius: 10px;
+}
+.tovar-name {
+    margin: 0;
+    color: var(--blue-color--);
+    hyphens: auto;
+}
+.tovar-info-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.tovar-price {
+    font-weight: bold;
+}
+
+.tovar-description {
+    color: rgb(0, 151, 0); 
+    margin: 0;
+}
+.circle {
+    content: '';
+    background-color: rgb(0, 151, 0);
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    display: inline-block;
+}
+.in-basket {
+    margin-top: 20px;
+    background-color: var(--blue-color--);
+    color: var(--white-color--);
+    border-radius: 5px;
+    border: none;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: .2s;
+}
+.in-basket:hover {
+    background-color: var(--orange-color--);
+}
+.name-and-delete {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.delete-container svg:hover {
+    cursor: pointer;
+    color: var(--orange-color--);
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.quantity-btn {
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: var(--second-grey-color--);
+    
+}
+.quantity-btn:hover {
+    box-shadow: 1   px 2px 2px var(--grey-color--);
+}
+
+/* Стилизация правого блока */
+.right-another-main-info {
+    flex: 1 1 30%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.another-main-info {
+    height: max-content;
+    border : 1px solid var(--grey-color--);
+    box-shadow: 3px 4px 4px var(--grey-color--);
+    background-color: var(--white-color--);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 20px 20px 20px;
+}
+.another-main-info-head {
+    border-top-left-radius: 10px;  /* Верхний левый угол */
+    border-top-right-radius: 10px; /* Верхний правый угол */
+}
+.another-main-info-head h1 {
+    font-weight: 700;
+    color: var(--blue-color--);
+    margin-bottom: 0;
+}
+.tovar-and-price, .delivery-block, .total-price-block {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.l-span {
+    color: var(--link-color--);
+}
+.total-price {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--blue-color--);
+}
+.right-total-price {
+    font-size: 1.5rem;
+    color: var(--blue-color--);
+    font-weight: 700;
+}
+.l-1 {
+    margin-top: 10px;
+}
+.line {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: var(--grey-color--);
+    padding: 0 20px;
+}
+.Btn {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blue-color--);
+    border: none;
+    border-radius: 10px;
+    color: var(--white-color--);
+    font-weight: 600;
+    gap: 8px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+}
+
+.svgIcon {
+    width: 16px;
+}
+.svgIcon path {
+    fill: var(--white-color--);
+}
+
+.Btn::before {
+    width: 100%;
+    height: 130px;
+    position: absolute;
+    content: "";
+    background-color: var(--blue-color--);
+    border-radius: 50%;
+    left: -100%;
+    top: 0;
+    transition-duration: .3s;
+    mix-blend-mode: difference;
+}
+
+.Btn:hover::before {
+    transition-duration: .3s;
+    transform: translate(100%, -50%);
+    border-radius: 0;
+}
+.Btn:hover {
+    color: var(--white-color--);
+}
+
+.Btn:active {
+    transform: translate(5px, 5px);
+    transition-duration: .3s;
+}
+.additional-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0 20px;
+}
+.additional-block span {
+    display: flex;align-items: center;
+    color: var(--link-color--);
+    gap: 5px;
+}
+/* Стилизация секции способов оплаты */
+.payment-method-block {
+    height: max-content;
+    background-color: var(--white-color--);
+    border : 1px solid var(--grey-color--);
+    box-shadow: 3px 4px 4px var(--grey-color--);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 20px;
+}
+.payment-method-block-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--blue-color--);
+}
+.payment-method-block-text {
+    font-size: 1.2rem;
+}
+.cards-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.pay-card {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(222, 224, 228);
+    border-radius: 10px;
+    padding: 5px 10px;
+    flex: 1 1 calc(100%/3);
+}
+.pay-card:hover {
+    background-color: var(--orange-color--);
+    color: var(--white-color--);
+}
+@media (max-width: 878px) {
+    .another-main-info {
+        position: static;
+    }
+}
+/* Стилизация секции промокода */
+.promocode-block {
+    height: max-content;
+    background-color: var(--white-color--);
+    border : 1px solid var(--grey-color--);
+    box-shadow: 3px 4px 4px var(--grey-color--);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 20px;
+}
+.promocode-block-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--blue-color--);
+}
+.promocode-block-head-text {
+    font-size: 1.2rem;
+}
+.inp-btn {
+    width: 100%;
+    display: flex;
+    height: 40px;
+    gap: 10px;
+}
+.inp-btn input {
+    width: 80%;
+    border: 1px solid var(--grey-color--);
+    border-radius: 10px;
+    font-size: 1rem;
+    padding:  5px 10px;
+}
+.inp-btn button {
+    width: 20%;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--blue-color--);
+    color: var(--white-color--);
+    hyphens: auto;
+    cursor: pointer;
+}
+.advice {
+    color: var(--link-color--);
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+}

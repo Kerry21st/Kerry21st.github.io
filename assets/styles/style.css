@@ -1,0 +1,530 @@
+
+/* Стилизация баннера */
+.banner {
+    padding: 2vh 3vw;
+}
+.banner-block {
+    display: flex;
+    align-items: center;
+    background-image: url("/assets/media/images/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: max-content;
+    border-radius: 15px;
+    padding: 100px 10%;
+}
+.new-collection {
+    color: var(--white-color--);
+    border-radius: 30px;
+    background-color: var(--orange-color--);
+    padding: 10px 20px;
+    width: max-content;
+}
+.banner-head {
+    font-size: 2rem;
+    color: var(--white-color--);
+    line-height: 125%;
+}
+.block {
+    height: auto;
+}
+.banner-text {
+    color: var(--white-color--);
+}
+.view-catalog-banner {
+    background-color: var(--orange-color--);
+    color: var(--white-color--);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: .3s;
+    cursor: pointer;
+} 
+.view-catalog-banner:hover {
+    background-color: var(--blue-color--);
+}
+
+/* Стилизация секции популярных товаров */
+.popular-tovar-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2vh 3vw;
+}
+.popular-head-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.popular {
+    color: var(--blue-color--);
+}
+.all-tovar {    
+    border-radius: 10px;
+    border: 1px solid var(--blue-color--);
+    background-color: var(--white-color--);
+    color: var(--blue-color--);
+    transition: .3s;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+.all-tovar:hover {
+    background: var(--blue-color--);
+    color: var(--white-color--);
+}
+.popular-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.tovar-card {
+    position: relative;
+    border: 1px solid var(--grey-color--);
+    background-color: var(--white-color--);
+    border-radius: 10px;
+    box-shadow: 5px 3px 7px var(--grey-color--);
+    padding: 15px;
+    width: 300px;
+    height: 550px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.tovar-name {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--black-color--);
+}
+.tovar-info-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.tovar-price {
+    font-weight: bold;
+}
+
+.tovar-description {
+    color: var(--link-color--); 
+}
+.in-basket {
+    margin-top: 20px;
+    background-color: var(--blue-color--);
+    color: var(--white-color--);
+    border-radius: 5px;
+    border: none;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: .2s;
+}
+.in-basket:hover {
+    background-color: var(--orange-color--);
+}
+.name-and-like {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.like-container {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    transition: 100ms;
+  }
+.like-container input {
+    opacity: 0;
+    cursor: pointer;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transition: 100ms;
+    animation: dislike_effect 400ms ease;
+}
+.like-container input:checked ~ .checkmark path {
+    fill: var(--orange-color--);
+    stroke-width: 0;
+}
+  
+.like-container input:checked ~ .checkmark {
+    animation: like_effect 400ms ease;
+}
+  
+.like-container:hover {
+    transform: scale(1.1);
+}
+  
+@keyframes like_effect {
+    0% {
+      transform: scale(0);
+    }
+  
+    50% {
+      transform: scale(1.2);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+}
+  
+@keyframes dislike_effect {
+    0% {
+      transform: scale(0);
+    }
+  
+    50% {
+      transform: scale(1.2);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+}
+@media (max-width: 762px) {
+    .tovar-card {
+        width: 100%;
+        height: max-content;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 3%;
+
+    }
+    .tovar-image {
+        width: 30%;
+        height: auto;
+        border-radius: 10px;
+    }
+}
+
+/* Стилизация окна популярных брендов */
+.popular-brands {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2vh 3vw;
+}
+.popular-brands h1 {
+    color: var(--blue-color--);
+}
+.popular-brands-text {
+    color: var(--link-color--);
+    padding-bottom: 25px ;
+    line-height: 150%;
+    font-size: 1.1rem;
+    text-indent: 40px;
+}
+/* Стили для слайдера */
+.swiper {
+    width: 100%;
+    padding: 50px 0;
+}
+
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+/* Стили слайдов */
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+}
+.swiper-slide:hover .brand-name {
+    display: flex;
+}
+.brand-name {
+    transition: transform 0.3s ease-in-out;
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 52px;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-color--);
+    font-weight: 700;
+}
+
+/* Изображения в слайдах */
+.swiper-slide img {
+    z-index: 1;
+    width: 100%;
+    object-fit: cover;  
+    transition: transform 0.3s ease-in-out;
+}
+
+.swiper-slide:hover img {
+    transform: scale(1.1);
+}
+/* Изменение стилей при уменьшении экрана */
+@media (max-width: 1100px) {
+    .swiper-slide img {
+        transform: scale(1.1);
+    }
+    .swiper-slide .brand-name {
+        display: flex;
+    }
+}
+
+/* Кастомные кнопки */
+.swiper-button-next, .swiper-button-prev {
+    color: var(--orange-color--) !important;
+}
+
+/* Кастомные точки пагинации */
+.swiper-pagination-bullet {
+    background: #ccc;
+    opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active {
+    background: red !important;
+    opacity: 1;
+}
+
+
+/* Стилизация секции спец предложений */
+.special-offer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh 3vw;
+}
+.spec-offer-block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: start;
+    background: url('/assets/media/images/banner-2.png') center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: max-content;
+    border-radius: 15px;
+    padding: 100px 10%;
+}
+.spec-offer-head {
+    color: var(--white-color--);
+    border-radius: 30px;
+    background-color: var(--orange-color--);
+    padding: 10px 20px;
+}
+.spec-offer-text-1 {
+    color: var(--white-color--);
+    font-size: 2rem;
+}
+.spec-offer-text-2 {
+    color: var(--white-color--);
+    line-height: 125%;
+    margin-top: 0;
+}
+.for-more {
+    cursor: pointer;
+    background-color: var(--orange-color--);
+    color: var(--white-color--);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: .3s;
+}
+.for-more:hover {
+    background-color: var(--blue-color--);
+}
+
+/* Стилизация секции с отзывами */
+.feedbacks-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh 3vw;
+    gap: 5vh;
+    margin-bottom: 100px;
+}
+.feedbacks-head {
+    color: var(--blue-color--);
+}
+.feedbacks-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.feedback {
+    flex: 1 1 25%;
+    min-width: 300px;
+    background-color: var(--second-grey-color--);
+    transition: .3s;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.feedback:hover {
+    box-shadow: 5px 3px 7px var(--grey-color--);
+}
+.photo-name-rating {
+    display: flex;
+    gap: 20px;
+}
+.img-block {
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-block img {
+    aspect-ratio: 1 / 1;
+    border-radius: 100%;
+    width: 60px;
+}
+.rating-star {
+    width: 15%;
+}
+.feedback-name {
+    margin-bottom: 5px;
+}
+
+/* Стилизация секции категроий */
+.categories {
+    padding: 2vh 3vw;
+}
+.main-categories-content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    overflow: hidden;
+}
+.cb-1 {
+    background-image: url('/assets/media/images/bauerDyna.jpeg');
+}
+.cb-2 {
+    background-image: url('/assets/media/images/ccm-stick.webp');
+}
+.cb-3 {
+    background-image: url('/assets/media/images/ccm-def.jpg');
+}
+.cb-4 {
+    background-image: url('/assets/media/images/laces.webp');
+}
+.cb-5 {
+    background-image: url('/assets/media/images/cap.webp');
+}
+.cb-6 {
+    background-image: url('/assets/media/images/clothe.jpeg');
+}
+.cb-7 {
+    background-image: url('/assets/media/images/kneepads.jpg');
+}
+.cb-8 {
+    background-image: url('/assets/media/images/ellowpads.jpg');
+}
+.cb-9 {
+    background-image: url('/assets/media/images/helmet.webp ');
+}
+.categories-block {
+    height: 100%;
+    width: calc(100%/8);
+    transition: .3s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.categories-block:hover {
+    width: calc(100%/3);    
+    background-size: cover;
+}
+.block-name {
+    position: absolute;
+    bottom: 30vh;
+    left: 0;
+    background-color: var(--blue-color--);
+    color: var(--white-color--);
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 10px 15px;
+    transform: rotate(-90deg);
+}
+.block-description {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: none;
+    color: var(--white-color--);
+    font-weight: 500;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    font-size: 1.5rem;
+    padding: 10px;
+}
+.categories-block:hover .block-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.categories-block:hover .block-name {
+    display: none;
+}
+@media (max-width: 1100px) {
+    .categories-block:hover {
+        width: calc(100%/8);    
+        background-size: cover;
+    }
+    .categories-block:hover .block-description {
+        display: none;
+    }
+}
+@media (max-width: 800px) {
+    .main-categories-content {
+        flex-direction: column;
+        height: max-content;
+    }
+    .categories-block {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+    }
+    .block-name {
+        position: static;
+        transform: none;
+    }
+    .categories-block:hover {
+        width: 100%; 
+    }
+    .categories-block:hover .block-description {
+        display: none;
+    }
+}

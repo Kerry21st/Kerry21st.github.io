@@ -1,0 +1,190 @@
+/* Стилизация шапки сайта */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5vh 3vw;
+    border-bottom: 1px solid var(--grey-color--);
+    background-color: var(--white-color--);
+    box-shadow: 5px 3px 7px var(--grey-color--);
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+}
+.logo {
+    width: calc(8rem + 1vw);
+    z-index: 1111;
+}
+.logo > img {
+    width: 100%;
+}
+.desktop-nav {
+    display: flex;
+    gap: 20px;
+}
+.header-link {
+    color: var(--link-color--);
+    transition: .3s;
+}
+.header-link:hover {
+    color: var(--black-color--);
+}
+
+/* Мобильное меню */
+.burger {
+    z-index: 5;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    background: transparent;
+    cursor: pointer;
+    display: none;
+}
+  
+.burger input {
+    display: none;
+}
+  
+.burger span {
+    z-index: 99999;
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: var(--black-color--);
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+  
+.burger span:nth-of-type(1) {
+    top: 0px;
+    transform-origin: left center;
+}
+  
+.burger span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: left center;
+}
+  
+.burger span:nth-of-type(3) {
+    top: 100%;
+    transform-origin: left center;
+    transform: translateY(-100%);
+}
+  
+/* Анимация при открытии меню */
+.burger input:checked ~ .mobile-nav {
+    transform: translateX(0);
+}
+  
+/* Изменение вида бургер-меню при открытии */
+.burger input:checked ~ span:nth-of-type(1) {
+    transform: rotate(45deg);
+}
+  
+.burger input:checked ~ span:nth-of-type(2) {
+    width: 0%;
+    opacity: 0;
+}
+  
+.burger input:checked ~ span:nth-of-type(3) {
+    transform: rotate(-45deg);
+}
+  
+.mobile-nav {
+    position: fixed;  /* Чтобы меню оставалось на экране при прокрутке */
+    z-index: 10;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--white-color--);
+    width: 100%;
+    height: max-content;
+    padding: 60px 20px 60px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    transform: translateY(-100%);  /* По умолчанию меню скрыто */
+    transition: transform .3s ease-in-out;
+}
+  
+.mobile-link {
+    font-size: 18px;
+    color: var(--link-color--);
+}
+  
+.burger input:checked ~ .mobile-nav {
+    transform: translateY(0%); /* Появление меню */
+}
+  
+/* Контейнер для значка и поля */
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+  
+/* Значок поиска */
+.search-icon {
+  background-color: var(--second-grey-color--);
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+  
+/* Поле ввода */
+.search-input {
+  position: absolute;
+  right: 0;
+  width: 0;
+  opacity: 0;
+  padding: 10px 15px;
+  font-size: 14px;
+  border: 1px solid var(--link-color--);
+  border-radius: 25px;
+  outline: none;
+  background-color: var(--white-color--);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: width 0.3s ease, opacity 0.3s ease;
+  z-index: -1; /* Скрываем поле за значком */
+}
+  
+/* Анимация при фокусе */
+.search-input:focus {
+      width: 200px; /* Ширина раскрытого поля */
+      opacity: 1;
+      z-index: 1;
+}
+  
+/* Увеличение значка при фокусе поля */ 
+  .search-input:focus + .search-icon,
+  .search-icon:focus-within {
+      transform: scale(0.9);
+}
+@media (max-width: 1300px) {
+    .search-container {
+        display: none;
+    }
+  }
+@media (max-width: 1000px) {
+    .desktop-nav {
+        display: none;
+    }
+    #basket {
+        display: none;
+    }
+    .burger {
+        display: block;
+    }
+}

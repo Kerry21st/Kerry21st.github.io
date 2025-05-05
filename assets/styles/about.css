@@ -1,0 +1,48 @@
+
+/* Стилизация основной секции */
+.wrapper-section {
+    padding: 2vh 3vw;
+    display: flex;
+    flex-direction: column;
+}
+.head-section, .mission, .plus-head {
+    color: var(--blue-color--);
+}
+.first-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;    
+}  
+.text-1 {
+    flex: 1 1 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+h2 {
+    font-size: 1.6rem;
+}
+.img-block {
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-block img {
+    width: 40vw;
+    min-width: 300px;
+    border-radius: 10px;
+    flex: 1 1 500px;
+}
+ul {
+    line-height: 150%;
+}
+p, li {
+    font-size: 1.1rem;
+    line-height: 150%;
+}
+strong {
+    color: var(--orange-color--);
+}

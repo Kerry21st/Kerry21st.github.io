@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HockeyPro - Контакты</title>
+    <link rel="icon" href="assets/media/icons/HockeyPro.svg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/styles/contacts.css">
+    <link rel="stylesheet" href="assets/styles/all.css">
+    <link rel="stylesheet" href="assets/styles/header.css">
+    <link rel="stylesheet" href="assets/styles/footer.css">
+</head>
+<body>
+    
+
+    
+    <!-- Шапка сайта -->
+     <header>
+        <a href="index.html" class="logo"><img src="assets/media/icons/HockeyPro.svg" alt="Логотип"></a>
+        <nav class="desktop-nav">
+            <a href="about.html" class="header-link">О нас</a>
+            <a href="catalog.html" class="header-link">Каталог</a>
+            <a href="selection-of-equipment.html" class="header-link">Подбор экипировки</a>
+            <a href="account.html" class="header-link">Личный кабинет</a>
+            <a href="basket.html" class="header-link">Корзина</a>
+        </nav>
+
+        <!-- Бургер меню для телефонов -->
+        <label class="burger" for="burger">
+            <input type="checkbox" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <!-- Меню для мобильных телефонов -->
+            <nav class="mobile-nav">
+                <a href="about.html" class="mobile-link">О нас</a>
+                <a href="catalog.html" class="mobile-link">Каталог</a>
+                <a href="selection-of-equipment.html" class="mobile-link">Подбор экипировки</a>
+                <a href="account.html" class="mobile-link">Личный кабинет</a>
+                <a href="basket.html" class="mobile-link">Корзина</a>
+            </nav>
+        </label>
+
+        <!-- Поиск -->
+        <div class="search-container">
+            <label for="search-input" class="search-icon">
+                <img src="assets/media/icons/search.svg" alt="Поиск">
+            </label>
+            <input type="text" id="search-input" class="search-input" placeholder="Поиск...">
+        </div>
+     </header>
+
+        <!-- Стилизация основной секции -->
+        <section class="wrapper">
+            <h1 class="wrapper-head">Контакты</h1>
+            <div class="main-info-block">
+                <div class="wrapper-info-block">
+                    <div class="info-block">
+                        <h2 class="info-head">Наши контакты</h2>
+                        <div class="info">
+                            <h4>Адрес:</h4>
+                            <span>г. Москва, ул. Спортивная, д. 1</span>
+                        </div>
+                        <div class="info">
+                            <h4>Телефон:</h4>
+                            <span>+7 (999) 123-45-67</span>
+                        </div>
+                        <div class="info">
+                            <h4>Email:</h4>
+                            <span>info@hockeypro.ru</span>
+                        </div>
+                        <div class="info">
+                            <h4>Режим работы:</h4>
+                            <span>Пн-Пт: 10:00 - 20:00 <br>
+                                Сб-Вс: 11:00 - 18:00</span>
+                        </div>
+                    </div>
+                    <div class="map-block" id="map">
+                        <script type="text/javascript" charset="utf-8" async
+                            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae6953b3e5d920b21925140bf9ccb49ab5dae7412559bb6dbd771276183c862ad&amp;width=100%&amp;height=500px&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <h1 class="form-head">Напишите нам</h1>
+                    <form class="form-block">
+                        <div class="input-block">
+                            <div class="name-email">
+                                <input type="text" placeholder="Ваше имя">
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                            <textarea name="theme" id="theme" placeholder="Тема сообщения"></textarea>
+                            <textarea name="message" id="message" placeholder="Ваше сообщение"></textarea>
+                        </div>
+                        <div class="btn-block">
+                            <button type="submit">Отправить сообщение</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Футер -->  
+        <footer> 
+            <div class="main-info-footer">
+                <div class="main-footer-block">
+                    <h2 class="main-footer-title">HockeyPro</h2>
+                    <p class="partner">
+                        Ваш надежный партнер в мире 
+                        хоккейной экипировки</p>
+                </div>
+                <div class="main-footer-block">
+                    <h3 class="contacts">Контакты</h3>
+                    <div class="phone-mail-block">
+                        <img src="assets/media/icons/phone.svg" alt="Телефон" class="phone-logo">
+                        <a class="phone-number" href="tel:+1234567890">8 (800) 555-35-35</a>
+                    </div>
+                    <div class="phone-mail-block">
+                        <img src="assets/media/icons/mail.svg" alt="Почта" class="mail-logo">
+                        <a class="mail-number" href="mailto:info@hockeypro.ru">info@hockeypro.ru</a>
+                    </div>
+                </div>
+                <div class="main-footer-block">
+                    <h3 class="information">Информация</h3>
+                    <nav class="info-nav">
+                        <a href="about.html" class="footer-nav-link">О компании</a>
+                        <a href="#" class="footer-nav-link">Доставка</a>
+                        <a href="#" class="footer-nav-link">Оплата</a>
+                        <a href="contacts.html" class="footer-nav-link">Контакты</a>
+                        <a href="authorization.html" class="footer-nav-link">Авторизация</a>
+                    </nav>
+                </div>
+                <div class="main-footer-block social-footer-block">
+                    <h3 class="social">Социальные сети</h3>
+                    <nav class="social-block">
+                        <a href="#" class="social-link"> <img src="assets/media/icons/facebook.svg" alt="facebook" class="social-link-img"></a>
+                        <a href="#" class="social-link"> <img src="assets/media/icons/instagram.svg" alt="instagram" class="social-link-img"></a>
+                        <a href="#" class="social-link"> <img src="assets/media/icons/twitter.svg" alt="twitter" class="social-link-img"></a>
+                    </nav>
+                </div>
+            </div>
+            <p class="all-rights">© 2024 HockeyPro. Все права защищены.</p>
+        </footer>
+        
+       <script src="assets/js/index.js"></script>
+    </body>
+</html>

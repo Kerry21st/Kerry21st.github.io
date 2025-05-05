@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HockeyPro - Страница товара</title>
+    <link rel="icon" href="assets/media/icons/HockeyPro.svg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/styles/tovar-page.css">
+    <link rel="stylesheet" href="assets/styles/all.css">
+    <link rel="stylesheet" href="assets/styles/header.css">
+    <link rel="stylesheet" href="assets/styles/footer.css">
+</head>
+<body>
+    
+
+    
+    <!-- Шапка сайта -->
+     <header>
+        <a href="index.html" class="logo"><img src="assets/media/icons/HockeyPro.svg" alt="Логотип"></a>
+        <nav class="desktop-nav">
+            <a href="about.html" class="header-link">О нас</a>
+            <a href="catalog.html" class="header-link">Каталог</a>
+            <a href="selection-of-equipment.html" class="header-link">Подбор экипировки</a>
+            <a href="contacts.html" class="header-link">Контакты</a>
+            <a href="basket.html" class="header-link">Корзина</a>
+            <a href="account.html" class="header-link">Личный кабинет</a>
+        </nav>
+
+        <!-- Бургер меню для телефонов -->
+        <label class="burger" for="burger">
+            <input type="checkbox" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <!-- Меню для мобильных телефонов -->
+            <nav class="mobile-nav">
+                <a href="about.html" class="mobile-link">О нас</a>
+                <a href="catalog.html" class="mobile-link">Каталог</a>
+                <a href="selection-of-equipment.html" class="mobile-link">Подбор экипировки</a>
+                <a href="contacts.html" class="mobile-link">Контакты</a>
+                <a href="basket.html" class="mobile-link">Корзина</a>
+                <a href="account.html" class="mobile-link">Личный кабинет</a>
+            </nav>
+        </label>
+
+        <!-- Поиск -->
+        <div class="search-container">
+            <label for="search-input" class="search-icon">
+                <img src="assets/media/icons/search.svg" alt="Поиск">
+            </label>
+            <input type="text" id="search-input" class="search-input" placeholder="Поиск...">
+        </div>
+     </header>
+
+      <!-- Создание секции карточки товара -->
+      <section class="tovar-info-section">
+        <div class="road">
+            <nav class="breadcrumb">
+                <a href="#">Главная /</a>
+                <a href="#">Каталог /</a>
+                <a href="#">Коньки /</a> 
+                <span>Коньки CCM Super Tacks AS3 Pro</span>
+            </nav>
+        </div>
+        <div class="main-info-block">
+            <div class="image-and-sertificate">
+                <div class="img-and-slide">
+                    <img src="assets/media/images/CCMSuperTacks.png" alt="Фото товара" class="main-image">
+                    <div class="img-block">
+                        <img src="assets/media/images/CCMSuperTacks.png" alt="Фото товара" class="slide-img">
+                        <img src="assets/media/images/tovar-page-1.png" alt="Фото товара" class="slide-img">
+                        <img src="assets/media/images/tovar-page-2.png" alt="Фото товара" class="slide-img">
+                    </div>
+                </div>
+                <div class="sertificats">
+                    <div class="sertificat sertificat-block">
+                        <div class="sertificat-block-head">
+                            <img src="assets/media/icons/red-medal.svg" alt="Медаль">
+                            <h4>Гарантия 1 год</h4>
+                        </div>
+                        <span>Официальная гарантия производителя</span>
+                    </div>
+                    <div class="warranty sertificat-block">
+                        <div class="sertificat-block-head">
+                            <img src="assets/media/icons/blue-shield.svg" alt="Щит">
+                            <h4>Оригинал</h4>
+                        </div>
+                        <span>100% оригинальная продукция</span>
+                    </div>
+                </div>
+            </div>
+            <div class="info-block">
+                <div class="info-head">
+                    <div class="left-info-head">
+                        <span class="category">Коньки</span>
+                        <span class="have"> 
+                            <img src="assets/media/icons/correct-white.svg" alt="Фото" class="have-img">
+                            <label for="">В наличии</label>
+                        </span>
+                    </div>
+                    <div class="right-info-head">
+                        <div class="rating">
+                            <img src="assets/media/icons/star-for-feedback.svg" alt="Звезда" class="star" height="30">
+                            <label for="">4.8</label>
+                        </div>
+                        <span class="feadback-length">(124 отзывов)</span>
+                    </div>
+                </div>
+                <h1 class="tovar-name">Коньки CCM Super Tacks AS3 Pro</h1>
+                <div class="price-block">
+                    <h2 class="price">54 990 ₽</h2>
+                    <span class="last-price">63 238 ₽</span>
+                    <span class="sale">Скидка 15%</span>
+                </div>
+                <div class="pre-condition-block">
+                    <div class="condition-block">
+                        <div class="condition">
+                            <img src="assets/media/icons/blue-delivery-car.svg" alt="доставка" class="codition-img">
+                            <span class="condition-text">Доставка: 3-5 дней</span>
+                        </div>
+                        <div class="condition">
+                            <img src="assets/media/icons/refund.svg" alt="возврат" class="codition-img">
+                            <span class="condition-text">Возврат: 14 дней</span>
+                        </div>
+                    </div>
+                    <div class="condition-block">
+                        <div class="condition">
+                            <img src="assets/media/icons/percent.svg" alt="рассрочка" class="codition-img">
+                            <span class="condition-text">Рассрочка 0%</span>
+                        </div>
+                        <div class="condition">
+                            <img src="assets/media/icons/blue-gift.svg" alt="подарок" class="codition-img">
+                            <span class="condition-text">Подарочная упаковка</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="add-to-basket">
+                    <div class="counter">
+                        <input type="button" value="-" placeholder="-">
+                        <span id="counter-num">1</span>
+                        <input type="button" value="+" placeholder="+">
+                    </div>
+                    <button class="basket-btn">
+                        <span class="btn-text">В корзину</span>
+                    </button>
+                    <div class="like-block">
+                        <label class="like-container">
+                            <input type="checkbox" />
+                            <div class="checkmark">
+                            <svg viewBox="0 0 256 256">
+                                <path
+                                d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z"
+                                stroke-width="20px"
+                                stroke="#000"
+                                fill="none"
+                                ></path>
+                            </svg>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="need-help">
+                    <div class="phone-and-text">
+                        <div class="phone-block">
+                            <img src="assets/media/icons/blue-phone.svg" alt="телефон">
+                        </div>
+                        <div class="text-block">
+                            <h5>Нужна помощь с выбором?</h5>
+                            <span>Позвоните нам или оставьте заявку</span>
+                        </div>
+                    </div>
+                    <button class="connect">Связаться</button>
+                </div>
+                <div class="description-and-specification">
+                    <div class="tabs">
+                        <button class="tab-link active" onclick="openTab(event, 'description')">Описание</button>
+                        <button class="tab-link" onclick="openTab(event, 'characteristics')">Характеристики</button>
+                    </div>
+                    <div class="tab-info-block">
+                        <div id="description" class="tab-content active">
+                            <p class="description">Профессиональные хоккейные коньки CCM Super Tacks AS3 Pro обеспечивают максимальную производительность и комфорт на льду. Разработаны с использованием передовых технологий для профессиональных игроков.</p>
+                        </div>
+                        <div id="characteristics" class="tab-content">
+                            <table>
+                                <tr>
+                                    <td><b>Размер:</b></td>
+                                    <td>7-12</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Жесткость:</b></td>
+                                    <td>Высокая</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Вес:</b></td>
+                                    <td>780 г</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Материал ботинка:</b></td>
+                                    <td>Композитный</td>    
+                                </tr>
+                                <tr>
+                                    <td><b>Стакан:</b></td>
+                                    <td>SpeedBlade XS</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Создание секции обзоров -->
+         <section class="reviews-section">
+            <div class="review-block">
+                <!-- Создание кнопок для переключения с обзорами и т.д. -->
+                <div class="review-head">
+                    <button class="review-toogle-btn active-1" onclick="openTabReview(event, 'overview')">Обзор</button>
+                    <button class="review-toogle-btn" onclick="openTabReview(event, 'videos')">Видеообзоры</button>
+                    <button class="review-toogle-btn" onclick="openTabReview(event, 'faq')">Вопросы и ответы</button>
+                    <button class="review-toogle-btn" onclick="openTabReview(event, 'buy')">Где купить</button>
+                </div>
+                <!-- Создание блока обзора -->
+                <div id="overview" class="tab-content-review active-1">
+                    <div class="advanteges">
+                        <div class="advanteges-head">
+                            <img src="assets/media/icons/blue-like.svg" alt="Лайк">
+                            <h3>Преимущества модели</h3>
+                        </div>
+                        <ul>
+                            <li>
+                                <img src="assets/media/icons/correct-green.svg" alt="Достоинства">
+                                <span class="advanteges-text">
+                                    Улучшенная фиксация ноги благодаря новой системе шнуровки и анатомической форме
+                                </span>
+                            </li>
+                            <li>
+                                <img src="assets/media/icons/correct-green.svg" alt="Достоинства">
+                                <span class="advanteges-text">
+                                    Усиленная защита щиколотки с использованием современных композитных материалов
+                                </span>
+                            </li>
+                            <li>
+                                <img src="assets/media/icons/correct-green.svg" alt="Достоинства">
+                                <span class="advanteges-text">
+                                    Легкий вес и высокая прочность благодаря технологии RibCor
+                                </span>
+                            </li>
+                            <li>
+                                <img src="assets/media/icons/correct-green.svg" alt="Достоинства">
+                                <span class="advanteges-text">
+                                    Быстрое и эффективное отведение влаги для комфорта даже при длительном использовании
+                                </span>
+                            </li>
+                            <li>
+                                <img src="assets/media/icons/correct-green.svg" alt="Достоинства">
+                                <span class="advanteges-text">
+                                    Стакан SpeedBlade XS для максимальной маневренности и стабильности на льду
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="for-who">
+                        <div class="for-who-head">
+                            <img src="assets/media/icons/blue-users.svg" alt="Пользователи" width="35">
+                            <h3>Для кого подходит</h3>
+                        </div>
+                        <div class="consumers-block">
+                            <div class="consumer">
+                                <h4 class="consumer-head">Профессиональные игроки</h4>
+                                <span class="consumer-text">
+                                    Высококачественные материалы и передовые технологии для максимальной производительности
+                                </span>
+                            </div>
+                            <div class="consumer">
+                                <h4 class="consumer-head">Полупрофессионалы</h4>
+                                <span class="consumer-text">
+                                    Отличное соотношение цены и качества для серьезных игроков
+                                </span>
+                            </div>
+                            <div class="consumer">
+                                <h4 class="consumer-head">Любители с опытом</h4>
+                                <span class="consumer-text">
+                                    Для тех, кто хочет перейти на более высокий уровень игры
+                                </span>
+                            </div>
+                            <div class="consumer">
+                                <h4 class="consumer-head">Начинающие</h4>
+                                <span class="consumer-text">
+                                    Не рекомендуется для новичков из-за высокой жесткости и специфических особенностей модели
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Создание блока видеообзора -->
+                <div id="videos" class="tab-content-review">
+                    <div class="videos-head">
+                        <img src="assets/media/icons/video.svg" alt="Видео">
+                        <h3>Видеообзоры</h3>
+                    </div>
+                    <div class="videos-block">
+                        <div class="video-card">
+                            <!-- Блок превью -->
+                            <div class="video-thumbnail">
+                                <img src="assets/media/images/overview-1.webp" alt="Превью видео">
+                                <button class="play-button">▶</button>
+                                <span>15:32</span>
+                            </div>
+                            <!-- Контейнер для видео -->
+                            <div class="video-container" style="display: none;">
+                                <iframe src="https://rutube.ru/play/embed/4902db4258382a29bea0a85ceb951669"></iframe>
+                            </div>
+                            <!-- Описание -->
+                            <div class="content">
+                                <h3>Обзор коньков CCM Super Tacks AS3 Pro от профессионала</h3>
+                                <p>Автор: ХоккейПро</p>
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <!-- Блок превью -->
+                            <div class="video-thumbnail">
+                                <img src="assets/media/images/overview-2.jpg" alt="Превью видео">
+                                <button class="play-button">▶</button>
+                                <span>15:32</span>
+                            </div>
+                            <!-- Контейнер для видео -->
+                            <div class="video-container" style="display: none;">
+                                <iframe src="https://rutube.ru/play/embed/4902db4258382a29bea0a85ceb951669"></iframe>
+                            </div>
+                            <!-- Описание -->
+                            <div class="content">
+                                <h3>Сравнение CCM Super Tacks AS3 Pro и Bauer Vapor 3X Pro</h3>
+                                <p>Автор: Хоккейный Эксперт</p>
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <!-- Блок превью -->
+                            <div class="video-thumbnail">
+                                <img src="assets/media/images/overview-3.webp" alt="Превью видео">
+                                <button class="play-button">▶</button>
+                                <span>15:32</span>
+                            </div>
+                            <!-- Контейнер для видео -->
+                            <div class="video-container" style="display: none;">
+                                <iframe src="https://rutube.ru/play/embed/4902db4258382a29bea0a85ceb951669"></iframe>
+                            </div>
+                            <!-- Описание -->
+                            <div class="content">
+                                <h3>Как правильно выбрать размер и подготовить коньки к игре</h3>
+                                <p>Автор: Школа Хоккея</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Создание блока вопросы и ответы -->
+                <div id="faq" class="tab-content-review">
+                    <div class="faq-head">
+                        <img src="assets/media/icons/message.svg" alt="Видео">
+                        <h3>Часто задаваемые вопросы</h3>
+                    </div>
+                    <div class="faq-container">
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span class="faq-question-text">Как правильно подобрать размер коньков?</span>
+                                <span class="faq-question-symbol">▼</span>
+                            </div>
+                            <div class="faq-answer">Для правильного выбора размера коньков рекомендуется примерять их на носок средней толщины...</div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span class="faq-question-text">Как часто нужно заточить лезвия коньков?</span>
+                                <span class="faq-question-symbol">▼</span>
+                            </div>
+                            <div class="faq-answer">Частота заточки зависит от интенсивности катания...</div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span class="faq-question-text">Какой радиус заточки выбрать?</span>
+                                <span class="faq-question-symbol">▼</span>
+                            </div>
+                            <div class="faq-answer">Радиус заточки зависит от стиля катания и предпочтений...</div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span class="faq-question-text">Как правильно сушить коньки после использования?</span>
+                                <span class="faq-question-symbol">▼</span>
+                            </div>
+                            <div class="faq-answer">После использования протрите лезвия сухой тканью и выньте стельки для проветривания...</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Создание блока Где купить -->
+                <div id="buy" class="tab-content-review">
+                    <div class="buy-head">
+                        <img src="assets/media/icons/red-place.svg" alt="Место" width="30">
+                        <h3>Где купить</h3>
+                    </div>
+                    <div class="buy-block">
+                        <div class="store-list">
+                            <div class="stores">
+                                <h3>Магазины в Москве</h3>
+                                <div class="store">
+                                    <img src="assets/media/icons/red-place.svg" alt="Место">
+                                    <strong>ТЦ "Авиапарк", 3 этаж</strong><br>
+                                    Ходынский бульвар, 4<br>
+                                    10:00 - 22:00 ежедневно
+                                </div>
+                                <div class="store">
+                                    <img src="assets/media/icons/red-place.svg" alt="Место">
+                                    <strong>ТЦ "Метрополис", 2 этаж</strong><br>
+                                    Ленинградское шоссе, 16А, стр. 4<br>
+                                    10:00 - 22:00 ежедневно
+                                </div>
+                                <div class="store">
+                                    <img src="assets/media/icons/red-place.svg" alt="Место">
+                                    <strong>ТРЦ "Афимолл Сити", 3 этаж</strong><br>
+                                    Пресненская наб., 2<br>
+                                    10:00 - 22:00 ежедневно
+                                </div>
+                            </div>
+                            <div class="stores">
+                                <h3>Магазины в Санкт-Петербурге</h3>
+                                <div class="store">
+                                    <img src="assets/media/icons/red-place.svg" alt="Место">
+                                    <strong>ТРЦ "Галерея", 4 этаж</strong><br>
+                                    Лиговский пр., 30А<br>
+                                    10:00 - 22:00 ежедневно
+                                </div>
+                                <div class="store">
+                                    <img src="assets/media/icons/red-place.svg" alt="Место">
+                                    <strong>ТРЦ "Охта Молл", 2 этаж</strong><br>
+                                    Брантовская дорога, 3<br>
+                                    10:00 - 22:00 ежедневно
+                                </div>
+                                <div class="store">
+                                    <img src="assets/media/icons/red-place.svg" alt="Место">
+                                    <strong>ТК "Невский Центр", 3 этаж</strong><br>
+                                    Невский пр., 114-116<br>
+                                    10:00 - 22:00 ежедневно
+                                </div>
+                            </div>
+                        </div>
+                        <div class="have-tovar">
+                            <span class="have-tovar-text">Наличие товара в магазинах может отличаться. Рекомендуем уточнять информацию по телефону.</span>
+                            <button class="tel-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone h-4 w-4 mr-2" data-component-path="src/pages/ProductDetail.tsx" data-component-name="Phone" data-component-line="913" data-component-file="ProductDetail.tsx" data-component-content="%7B%22className%22%3A%22h-4%20w-4%20mr-2%22%7D">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                    </path>
+                                </svg>
+                                <span class="tel">8-800-555-35-35</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+        <!-- Создание секции технологий -->
+         <section class="technologies-section">
+            <h2 class="technologies-head">
+                Технологии CCM Super Tacks AS3 Pro
+            </h2>
+            <div class="technologies-block">
+                <div class="technology">
+                    <h3 class="technology-name">
+                        Технология MonoFrame 360
+                    </h3>
+                    <span class="technology-text">
+                        Цельная конструкция ботинка без швов для максимальной энергоотдачи и стабильности.
+                    </span>
+                </div> 
+                <div class="technology">
+                    <h3 class="technology-name">
+                        Стакан XS Holder
+                    </h3>
+                    <span class="technology-text">
+                        Легкий и прочный держатель лезвия с улучшенной системой крепления для большей надежности.
+                    </span>
+                </div> 
+                <div class="technology">
+                    <h3 class="technology-name">
+                        TotalDri Pro+ подкладка
+                    </h3>
+                    <span class="technology-text">
+                        Антибактериальная подкладка с улучшенной вентиляцией для быстрого отвода влаги.
+                    </span>
+                </div> 
+                <div class="technology">
+                    <h3 class="technology-name">
+                        Система фиксации DualZone
+                    </h3>
+                    <span class="technology-text">
+                        Различные зоны жесткости для оптимального баланса поддержки и гибкости.
+                    </span>
+                </div> 
+                <div class="technology">
+                    <h3 class="technology-name">
+                        Carbon Composite ботинок
+                    </h3>
+                    <span class="technology-text">
+                        Легкий и прочный материал внешней части ботинка для долговечности и защиты.
+                    </span>
+                </div> 
+                <div class="technology">
+                    <h3 class="technology-name">
+                        Anatomical Response язык
+                    </h3>
+                    <span class="technology-text">
+                        Многослойный язык с дополнительной защитой для комфорта и снижения риска травм.
+                    </span>
+                </div> 
+            </div>
+        </section>
+
+        <!-- Создание секции отзывов товара -->
+        <section class="feeadbacks-section">
+            <div class="feedback-head">
+                <div class="img-and-head">
+                    <img src="assets/media/icons/message.svg" alt="Отзывы" class="feedback-head-img">
+                    <h3 class="feedback-head-text">Отзывы покупателей (3)</h3>
+                </div>
+                <button class="write-feedback-btn active-2" onclick="toggleFeedback(event, 'write-feedback')">
+                    Написать отзыв
+                </button>
+            </div>
+            <div class="feedbacks-block">
+                <div class="feedback-card">
+                    <div class="photo-name-rating">
+                        <div class="feedback-img-block">
+                            <img src="assets/media/images/feedback-photo-1.png" alt="фото 1" class="feedback-photo">
+                        </div>
+                        <div class="name-and-rating">
+                            <h3 class="feedback-name">Александр П.</h3>
+                            <span class="date">12.03.2023</span>
+                            <div class="rating-block">
+                                <img src="assets/media/icons/star-for-feedback.svg" alt="звезда" class="rating-star">
+                                <img src="assets/media/icons/star-for-feedback.svg" alt="звезда" class="rating-star">
+                                <img src="assets/media/icons/star-for-feedback.svg" alt="звезда" class="rating-star">
+                                <img src="assets/media/icons/star-for-feedback.svg" alt="звезда" class="rating-star">
+                                <img src="assets/media/icons/star-for-feedback.svg" alt="звезда" class="rating-star">
+                            </div>  
+                        </div>
+                    </div>
+                    <p class="feedbacks-text">Отличные коньки! Быстрая доставка, хорошее качество. Использую уже месяц, очень доволен покупкой.</p>
+                    <div class="photos-block">
+                        <h4 class="photo-block-head">Фотографии:</h4>
+                        <div class="pre-photos">
+                            <div class="photo-block">
+                                <img src="assets/media/images/feedback-tovar-photo.jpeg" alt="фото">
+                                <div class="overview-img">
+                                    <img src="assets/media/icons/eye.svg" alt="Глаз">
+                                </div>
+                            </div>
+                            <div class="photo-block">
+                                <img src="assets/media/images/feedback-tovar-photo-1.webp" alt="фото">
+                                <div class="overview-img">
+                                    <img src="assets/media/icons/eye.svg" alt="Глаз">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback-card">
+                    <div class="photo-name-rating">
+                        <div class="feedback-img-block">
+                            <img src="assets/media/images/feedback-photo-2.png" alt="фото 1" class="feedback-photo">
+                        </div>
+                        <div class="name-and-rating">
+                            <h3 class="feedback-name">Александр П.</h3>
+                            <span class="date">12.03.2023</span>
+                            <div class="rating-block">
+                                <img src="assets/media/icons/star-for-feedback.svg" alt="звезда" class="rating-star">
+                                <img src="assets/media/icons/star-for-feedback.svg" alt="звезда" class="rating-star">
+                                <img src="assets/media/icons/star-for-feedback.svg" alt="звезда" class="rating-star">
+                                <img src="assets/media/icons/star-for-feedback.svg" alt="звезда" class="rating-star">
+                                <img src="assets/media/icons/star-for-feedback.svg" alt="звезда" class="rating-star">
+                            </div>  
+                        </div>
+                    </div>
+                    <p class="feedbacks-text">Отличные коньки! Быстрая доставка, хорошее качество. Использую уже месяц, очень доволен покупкой.</p>
+                    <div class="photos-block">
+                        <h4 class="photo-block-head">Фотографии:</h4>
+                        <div class="pre-photos">
+                            <div class="photo-block">
+                                <img src="assets/media/images/feedback-tovar-photo-1.webp" alt="фото">
+                                <div class="overview-img">
+                                    <img src="assets/media/icons/eye.svg" alt="Глаз">
+                                </div>
+                            </div>
+                            <div class="photo-block">
+                                <img src="assets/media/images/feedback-tovar-photo.jpeg" alt="фото">
+                                <div class="overview-img">
+                                    <img src="assets/media/icons/eye.svg" alt="Глаз">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback-card">
+                    <div class="photo-name-rating">
+                        <div class="feedback-img-block">
+                            <img src="assets/media/images/feedback-photo-1.png" alt="фото 1" class="feedback-photo">
+                        </div>
+                        <div class="name-and-rating">
+                            <h3 class="feedback-name">Дмитрий С.</h3>
+                            <span class="date">18.01.2023</span>
+                            <div class="rating-block">
+                                <img src="assets/media/icons/star-for-feedback.svg" alt="звезда" class="rating-star">
+                                <img src="assets/media/icons/star-for-feedback.svg" alt="звезда" class="rating-star">
+                                <img src="assets/media/icons/star-for-feedback.svg" alt="звезда" class="rating-star">
+                                <img src="assets/media/icons/star-for-feedback.svg" alt="звезда" class="rating-star">
+                                <img src="assets/media/icons/star-for-feedback.svg" alt="звезда" class="rating-star">
+                            </div>  
+                        </div>
+                    </div>
+                    <p class="feedbacks-text">Супер! Играю в хоккей уже 10 лет, это лучшие коньки, что у меня были. Рекомендую всем профессионалам.</p>
+                    <div class="photos-block">
+                        <h4 class="photo-block-head">Фотографии:</h4>
+                        <div class="pre-photos">
+                            <div class="photo-block">
+                                <img src="assets/media/images/feedback-tovar-photo-1.webp" alt="фото">
+                                <div class="overview-img">
+                                    <img src="assets/media/icons/eye.svg" alt="Глаз">
+                                </div>
+                            </div>
+                            <div class="photo-block">
+                                <img src="assets/media/images/feedback-tovar-photo.jpeg" alt="фото">
+                                <div class="overview-img">
+                                    <img src="assets/media/icons/eye.svg" alt="Глаз">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form class="write-feedback-block" id="write-feedback">
+                <h3 class="write-feedback">Оставить отзыв</h3>
+                <div class="star-block">
+                    <sapn class="star-head">Ваша оценка</sapn>
+                    <div class="rating">
+                        <span class="star" data-value="1">★</span>
+                        <span class="star" data-value="2">★</span>
+                        <span class="star" data-value="3">★</span>
+                        <span class="star" data-value="4">★</span>
+                        <span class="star" data-value="5">★</span>
+                    </div>
+                </div>
+                <div class="feedback-text-block">
+                    <sapn class="feedback-text-head">Ваш отзыв</sapn>
+                    <textarea required name="feedback" class="feedback-text-input" placeholder="Поделитесь своими впечатлениями о товаре..."></textarea>
+                </div>
+                <div class="add-photo-block">
+                    <span class="add-photo-head">Добавить фотографии</span>
+                    <div class="input-add-block">
+                        <input type="file" class="input-add" id="input-add" multiple>
+                        <label for="input-add" class="custom-upload">+</label>
+                    </div>
+                    <span class="attention-text">Максимум 5 фотографий (JPG, PNG)</span>
+                </div>
+                <button type="submit" class="add-feedback-btn">Отправить отзыв</button>
+            </form>
+        </section>
+
+        <!-- Футер -->
+        <footer> 
+            <div class="main-info-footer">
+                <div class="main-footer-block">
+                    <h2 class="main-footer-title">HockeyPro</h2>
+                    <p class="partner">
+                        Ваш надежный партнер в мире 
+                        хоккейной экипировки</p>
+                </div>
+                <div class="main-footer-block">
+                    <h3 class="contacts">Контакты</h3>
+                    <div class="phone-mail-block">
+                        <img src="assets/media/icons/phone.svg" alt="Телефон" class="phone-logo">
+                        <a class="phone-number" href="tel:+1234567890">8 (800) 555-35-35</a>
+                    </div>
+                    <div class="phone-mail-block">
+                        <img src="assets/media/icons/mail.svg" alt="Почта" class="mail-logo">
+                        <a class="mail-number" href="mailto:info@hockeypro.ru">info@hockeypro.ru</a>
+                    </div>
+                </div>
+                <div class="main-footer-block">
+                    <h3 class="information">Информация</h3>
+                    <nav class="info-nav">
+                        <a href="about.html" class="footer-nav-link">О компании</a>
+                        <a href="#" class="footer-nav-link">Доставка</a>
+                        <a href="#" class="footer-nav-link">Оплата</a>
+                        <a href="contacts.html" class="footer-nav-link">Контакты</a>
+                        <a href="authorization.html" class="footer-nav-link">Авторизация</a>
+                    </nav>
+                </div>
+                <div class="main-footer-block social-footer-block">
+                    <h3 class="social">Социальные сети</h3>
+                    <nav class="social-block">
+                        <a href="#" class="social-link"> <img src="assets/media/icons/facebook.svg" alt="facebook" class="social-link-img"></a>
+                        <a href="#" class="social-link"> <img src="assets/media/icons/instagram.svg" alt="instagram" class="social-link-img"></a>
+                        <a href="#" class="social-link"> <img src="assets/media/icons/twitter.svg" alt="twitter" class="social-link-img"></a>
+                    </nav>
+                </div>
+            </div>
+            <p class="all-rights">© 2024 HockeyPro. Все права защищены.</p>
+        </footer>
+        
+       <script src="assets/js/index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HockeyPro - Главная</title>
+    <link rel="icon" href="assets/media/icons/HockeyPro.svg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/all.css">
+    <link rel="stylesheet" href="assets/styles/header.css">
+    <link rel="stylesheet" href="assets/styles/footer.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    
+
+    
+    <!-- Шапка сайта -->
+     <header>
+        <a href="index.html" class="logo"><img src="assets/media/icons/HockeyPro.svg" alt="Логотип"></a>
+        <nav class="desktop-nav">
+            <a href="about.html" class="header-link">О нас</a>
+            <a href="catalog.html" class="header-link">Каталог</a>
+            <a href="selection-of-equipment.html" class="header-link">Подбор экипировки</a>
+            <a href="contacts.html" class="header-link">Контакты</a>
+            <a href="account.html" class="header-link">Личный кабинет</a>
+            <a href="basket.html" class="header-link">Корзина</a>
+        </nav>
+
+        <!-- Бургер меню для телефонов -->
+        <label class="burger" for="burger">
+            <input type="checkbox" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <!-- Меню для мобильных телефонов -->
+            <nav class="mobile-nav">
+                <a href="about.html" class="mobile-link">О нас</a>
+                <a href="catalog.html" class="mobile-link">Каталог</a>
+                <a href="selection-of-equipment.html" class="mobile-link">Подбор экипировки</a>
+                <a href="contacts.html" class="mobile-link">Контакты</a>
+                <a href="account.html" class="mobile-link">Личный кабинет</a>
+                <a href="basket.html" class="mobile-link">Корзина</a>
+            </nav>
+        </label>
+
+        <!-- Поиск -->
+        <div class="search-container">
+            <label for="search-input" class="search-icon">
+                <img src="assets/media/icons/search.svg" alt="Поиск">
+            </label>
+            <input type="text" id="search-input" class="search-input" placeholder="Поиск...">
+        </div>
+     </header>
+     <!-- Баннер -->
+      <section class="banner">
+        <div class="banner-block">
+            <div class="block">
+                <div class="new-collection">Новая коллекция</div>
+                <h1 class="banner-head">Профессиональная <br>
+                    экипировка для <br>
+                    хоккея
+                </h1>
+                <p class="banner-text">Выбор профессионалов и любителей хоккея</p>
+                <a href="catalog.html" class="view-catalog-banner">Смотреть каталог</a>
+            </div>
+        </div>
+      </section>
+
+      <!-- Популярные товары -->
+       <section class="popular-tovar-section">
+        <div class="popular-head-block">
+            <h1 class="popular">Популярные товары</h1>
+            <a href="catalog.html" class="all-tovar">Все товары</a>
+        </div>
+        <div class="popular-cards">
+            <div class="tovar-card">
+                <img src="assets/media/images/CCMSuperTacks.png" alt="Товар 1" class="tovar-image">
+                <div class="tovar-info-block">
+                    <div class="name-and-like">
+                        <a href="tovar-page.html" class="tovar-name">Коньки CCM Super Tacks AS3 Pro</a>
+                        <label class="like-container">
+                            <input checked type="checkbox" />
+                            <div class="checkmark">
+                              <svg viewBox="0 0 256 256">
+                                <path
+                                  d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z"
+                                  stroke-width="20px"
+                                  stroke="#000"
+                                  fill="none"
+                                ></path>
+                              </svg>
+                            </div>
+                        </label>
+                    </div>
+                    <p class="tovar-description">Хоккейные коньки CCM Super Tacks AS3 Pro профессионального уровня</p>
+                    <span class="tovar-price">54 990 ₽</span>
+                    <button class="in-basket">В корзину</button>
+                </div>
+            </div>
+            <div class="tovar-card">
+                <img src="assets/media/images/BauerVaporHyperLite.png" alt="Товар 1" class="tovar-image">
+                <div class="tovar-info-block">
+                    <div class="name-and-like">
+                        <a href="tovar-page.html" class="tovar-name">Клюшка Bauer Vapor Hyperlite</a>
+                        <label class="like-container">
+                            <input type="checkbox" />
+                            <div class="checkmark">
+                              <svg viewBox="0 0 256 256">
+                                <path
+                                  d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z"
+                                  stroke-width="20px"
+                                  stroke="#000"
+                                  fill="none"
+                                ></path>
+                              </svg>
+                            </div>
+                        </label>
+                    </div>
+                    <p class="tovar-description">Легкая и мощная клюшка Bauer Vapor Hyperlite</p>
+                    <span class="tovar-price">32 990 ₽</span>
+                    <button class="in-basket">В корзину</button>
+                </div>
+            </div>
+            <div class="tovar-card">
+                <img src="assets/media/images/BAUERXS24.png" alt="Товар 1" class="tovar-image">
+                <div class="tovar-info-block">
+                    <div class="name-and-like">
+                        <a href="tovar-page.html" class="tovar-name">Нагрудник BAUER X S24</a>
+                        <label class="like-container">
+                            <input type="checkbox" />
+                            <div class="checkmark">
+                              <svg viewBox="0 0 256 256">
+                                <path
+                                  d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z"
+                                  stroke-width="20px"
+                                  stroke="#000"
+                                  fill="none"
+                                ></path>
+                              </svg>
+                            </div>
+                        </label>
+                    </div>
+                    <p class="tovar-description">Нагрудник BAUER X S24: защита, комфорт и высокая производительность на льду</p>
+                    <span class="tovar-price">18 990 ₽</span>
+                    <button class="in-basket">В корзину</button>
+                </div>
+            </div>
+        </div>
+       </section>
+
+       <!-- Популярные бренды -->
+       <section class="popular-brands">
+        <h1>Партнеры на льду: Команды, которые выбирают нас</h1>
+        <p class="popular-brands-text">
+            Мы поставляем хоккейную экипировку таким командам, как Washington Capitals, 
+            а также множеству других профессиональных и любительских команд, обеспечивая 
+            их высококачественными и надежными товарами, которые помогают спортсменам не 
+            только чувствовать себя комфортно и уверенно на льду, но и достигать своих 
+            спортивных целей, демонстрируя выдающиеся результаты в соревнованиях различного 
+            уровня.
+        </p>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="assets/media/images/rangers-img.jpg" alt="New York Rangers">
+                    <div class="brand-name">
+                        <img src="assets/media/images/rangers.svg" alt="New York Rangers"/>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/media/images/edmonton-img.jpg" alt="Edmonton Oilers">
+                    <div class="brand-name">
+                        <img src="assets/media/images/edmonton.svg" alt="Edmonton Oilers"/>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/media/images/dallas-img.jpg" alt="Dallas Stars">
+                    <div class="brand-name">
+                        <img src="assets/media/images/dallas.svg" alt="Dallas Stars"/>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/media/images/capitals-img.jpg" alt="Washington Capitals">
+                    <div class="brand-name">
+                        <img src="assets/media/images/capitals.svg" alt="Washington Capitals"/>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/media/images/pittsburg-img.jpg" alt="Pittsburg Piengvins">
+                    <div class="brand-name">
+                        <img src="assets/media/images/pittsburg.svg" alt="Pittsburg Piengvins"/>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/media/images/wild-img.jpg" alt="Minnesota Wild">
+                    <div class="brand-name">
+                        <img src="assets/media/images/wild.svg" alt="Minnesota Wild"/>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/media/images/canadiens-img.jpg" alt="Montreal Canadiens">
+                    <div class="brand-name">
+                        <img src="assets/media/images/canadiens.svg" alt="Montreal Canadiens"/>
+                    </div>
+                </div>
+            </div>
+            <!-- Кнопки -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- Точки-пагинация -->
+            <div class="swiper-pagination"></div>
+        </div>
+       </section>
+
+       <!-- Спец предложения -->
+        <section class="special-offer">
+            <div class="spec-offer-block">
+                <div class="spec-offer-head">Специальное предложение</div>
+                <h1 class="spec-offer-text-1">
+                    Скидка 20% на всю защитную <br>
+                    экипировку
+                </h1>
+                <p class="spec-offer-text-2">
+                    Только до конца месяца! Успейте приобрести качественную <br>
+                    защиту по выгодной цене.</p>
+                    <button class="for-more">Подробнее</button>
+        </section>
+
+        <!-- Отзывы -->
+         <section class="feedbacks-section">
+            <h1 class="feedbacks-head">Отзывы наших клиентов</h1>
+            <div class="feedbacks-block">
+                <div class="feedback">
+                    <div class="photo-name-rating">
+                        <div class="img-block">
+                            <img src="assets/media/images/feedback-photo-1.png" alt="фото 1" class="feedback-photo">
+                        </div>
+                        <div class="name-and-rating">
+                            <h3 class="feedback-name">Александр П.</h3>
+                            <div class="rating-block">
+                                <img src="assets/media/icons/star-for-feedback.svg" alt="звезда" class="rating-star">
+                                <img src="assets/media/icons/star-for-feedback.svg" alt="звезда" class="rating-star">
+                                <img src="assets/media/icons/star-for-feedback.svg" alt="звезда" class="rating-star">
+                                <img src="assets/media/icons/star-for-feedback.svg" alt="звезда" class="rating-star">
+                                <img src="assets/media/icons/star-for-feedback.svg" alt="звезда" class="rating-star">
+                            </div>  
+                        </div>
+                    </div>
+                    <p class="feedback-text">
+                        Отличный магазин! Купил полную 
+                        экипировку, очень доволен качеством.
+                    </p>
+                </div>
+                <div class="feedback">
+                    <div class="photo-name-rating">
+                        <div class="img-block">
+                            <img src="assets/media/images/feedback-photo-2.png" alt="фото 1" class="feedback-photo">
+                        </div>                        
+                        <div class="name-and-rating">
+                            <h3 class="feedback-name">Михаил С.</h3>
+                            <div class="rating-block">
+                                <img src="assets/media/icons/star-for-feedback.svg" alt="звезда" class="rating-star">
+                                <img src="assets/media/icons/star-for-feedback.svg" alt="звезда" class="rating-star">
+                                <img src="assets/media/icons/star-for-feedback.svg" alt="звезда" class="rating-star">
+                                <img src="assets/media/icons/star-for-feedback.svg" alt="звезда" class="rating-star">
+                                <img src="assets/media/icons/star-for-feedback.svg" alt="звезда" class="rating-star">
+                            </div>  
+                        </div>
+                    </div>
+                    <p class="feedback-text">
+                        Быстрая доставка, профессиональная 
+                        консультация. Рекомендую!
+                    </p>
+                </div>
+                <div class="feedback">
+                    <div class="photo-name-rating">
+                        <div class="img-block">
+                            <img src="assets/media/images/feedback-photo-3.png" alt="фото 1" class="feedback-photo">
+                        </div>                        
+                        <div class="name-and-rating">
+                            <h3 class="feedback-name">Дмитрий К.</h3>
+                            <div class="rating-block">
+                                <img src="assets/media/icons/star-for-feedback.svg" alt="звезда" class="rating-star">
+                                <img src="assets/media/icons/star-for-feedback.svg" alt="звезда" class="rating-star">
+                                <img src="assets/media/icons/star-for-feedback.svg" alt="звезда" class="rating-star">
+                                <img src="assets/media/icons/star-for-feedback.svg" alt="звезда" class="rating-star">
+                                <img src="assets/media/icons/star-for-feedback.svg" alt="звезда" class="rating-star">
+                            </div>  
+                        </div>
+                    </div>
+                    <p class="feedback-text">
+                        Большой выбор экипировки. 
+                        Цены приемлемые.
+                    </p>
+                </div>
+            </div>
+         </section>
+
+        <!-- Футер -->
+        <footer> 
+            <div class="main-info-footer">
+                <div class="main-footer-block">
+                    <h2 class="main-footer-title">HockeyPro</h2>
+                    <p class="partner">
+                        Ваш надежный партнер в мире 
+                        хоккейной экипировки</p>
+                </div>
+                <div class="main-footer-block">
+                    <h3 class="contacts">Контакты</h3>
+                    <div class="phone-mail-block">
+                        <img src="assets/media/icons/phone.svg" alt="Телефон" class="phone-logo">
+                        <a class="phone-number" href="tel:+1234567890">8 (800) 555-35-35</a>
+                    </div>
+                    <div class="phone-mail-block">
+                        <img src="assets/media/icons/mail.svg" alt="Почта" class="mail-logo">
+                        <a class="mail-number" href="mailto:info@hockeypro.ru">info@hockeypro.ru</a>
+                    </div>
+                </div>
+                <div class="main-footer-block">
+                    <h3 class="information">Информация</h3>
+                    <nav class="info-nav">
+                        <a href="about.html" class="footer-nav-link">О компании</a>
+                        <a href="#" class="footer-nav-link">Доставка</a>
+                        <a href="#" class="footer-nav-link">Оплата</a>
+                        <a href="contacts.html" class="footer-nav-link">Контакты</a>
+                        <a href="authorization.html" class="footer-nav-link">Авторизация</a>
+                    </nav>
+                </div>
+                <div class="main-footer-block social-footer-block">
+                    <h3 class="social">Социальные сети</h3>
+                    <nav class="social-block">
+                        <a href="#" class="social-link"> <img src="assets/media/icons/facebook.svg" alt="facebook" class="social-link-img"></a>
+                        <a href="#" class="social-link"> <img src="assets/media/icons/instagram.svg" alt="instagram" class="social-link-img"></a>
+                        <a href="#" class="social-link"> <img src="assets/media/icons/twitter.svg" alt="twitter" class="social-link-img"></a>
+                    </nav>
+                </div>
+            </div>
+            <p class="all-rights">© 2024 HockeyPro. Все права защищены.</p>
+        </footer>
+        
+       <script src="assets/js/index.js"></script>
+       <!-- Подкючение swiperJS для создания слайдера -->
+       <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+
+/* Стилизация футера */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--footer-color--);
+    padding: 2vh 3vw;
+}
+.main-info-footer {
+    width: 100%;
+    border-bottom: 1px solid var(--second-white-color--);
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    padding: 5vh 0;
+}
+.main-footer-block {
+    min-width: 300px;
+    width: 25%;
+}
+.main-footer-title, .contacts, .information, .social{
+    color: var(--white-color--);
+}
+.partner, .phone-number, .mail-number, .footer-nav-link, .all-rights {
+    color: var(--grey-color--);
+}
+.phone-number:hover, .mail-number:hover, .footer-nav-link:hover {
+    color: var(--white-color--);
+}
+.phone-mail-block {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+}
+.info-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+}
+@media (max-width: 762px) {
+    .main-info-footer {
+        justify-content: center;
+        display: flex;
+    }
+}

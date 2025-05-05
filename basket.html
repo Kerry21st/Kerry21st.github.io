@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HockeyPro - Корзина</title>
+    <link rel="icon" href="assets/media/icons/HockeyPro.svg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/styles/basket.css">
+    <link rel="stylesheet" href="assets/styles/all.css">
+    <link rel="stylesheet" href="assets/styles/header.css">
+    <link rel="stylesheet" href="assets/styles/footer.css">
+</head>
+
+<body>
+
+
+
+    <!-- Шапка сайта -->
+    <header>
+        <a href="index.html" class="logo"><img src="assets/media/icons/HockeyPro.svg" alt="Логотип"></a>
+        <nav class="desktop-nav">
+            <a href="about.html" class="header-link">О нас</a>
+            <a href="catalog.html" class="header-link">Каталог</a>
+            <a href="selection-of-equipment.html" class="header-link">Подбор экипировки</a>
+            <a href="contacts.html" class="header-link">Контакты</a>
+            <a href="account.html" class="header-link">Личный кабинет</a>
+        </nav>
+
+        <!-- Бургер меню для телефонов -->
+        <label class="burger" for="burger">
+            <input type="checkbox" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <!-- Меню для мобильных телефонов -->
+            <nav class="mobile-nav">
+                <a href="about.html" class="mobile-link">О нас</a>
+                <a href="catalog.html" class="mobile-link">Каталог</a>
+                <a href="selection-of-equipment.html" class="mobile-link">Подбор экипировки</a>
+                <a href="contacts.html" class="mobile-link">Контакты</a>
+                <a href="account.html" class="mobile-link">Личный кабинет</a>
+            </nav>
+        </label>
+
+        <!-- Поиск -->
+        <div class="search-container">
+            <label for="search-input" class="search-icon">
+                <img src="assets/media/icons/search.svg" alt="Поиск">
+            </label>
+            <input type="text" id="search-input" class="search-input" placeholder="Поиск...">
+        </div>
+    </header>
+    <!-- Создание основной секции -->
+    <section class="wrapper">
+        <h1 class="basket-head">Корзина</h1>
+        <div class="main-section">
+            <div class="tovar-section">
+                <div class="tovar-section-head">
+                    <h1>Товары в корзине</h1>
+                </div>
+                <div class="line line-1"></div>
+                <div class="tovar-cards-block">
+                    <div class="tovar-card">
+                        <img src="assets/media/images/CCMSuperTacks.png" alt="Товар 1" class="tovar-image">
+                        <div class="tovar-info-block">
+                            <div class="name-and-delete">
+                                <h3 class="tovar-name">Коньки CCM Super Tacks AS3 Pro</h3>
+                                <label class="delete-container">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-trash2 h-5 w-5"
+                                        data-component-path="src/pages/CartPage.tsx" data-component-name="Trash2"
+                                        data-component-line="245" data-component-file="CartPage.tsx"
+                                        data-component-content="%7B%22className%22%3A%22h-5%20w-5%22%7D">
+                                        <path d="M3 6h18"></path>
+                                        <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path>
+                                        <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path>
+                                        <line x1="10" x2="10" y1="11" y2="17"></line>
+                                        <line x1="14" x2="14" y1="11" y2="17"></line>
+                                    </svg>
+                                </label>
+                            </div>
+                            <p class="tovar-description">
+                                <span class="circle"></span>
+                                В наличии</p>
+                            <span class="tovar-price">18 990 ₽</span>
+                            <div class="quantity-control">
+                                <button class="quantity-btn">−</button>
+                                <span class="quantity">1</span>
+                                <button class="quantity-btn">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tovar-card">
+                        <img src="assets/media/images/CCMSuperTacks.png" alt="Товар 1" class="tovar-image">
+                        <div class="tovar-info-block">
+                            <div class="name-and-delete">
+                                <h3 class="tovar-name">Коньки CCM Super Tacks AS3 Pro</h3>
+                                <label class="delete-container">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-trash2 h-5 w-5"
+                                        data-component-path="src/pages/CartPage.tsx" data-component-name="Trash2"
+                                        data-component-line="245" data-component-file="CartPage.tsx"
+                                        data-component-content="%7B%22className%22%3A%22h-5%20w-5%22%7D">
+                                        <path d="M3 6h18"></path>
+                                        <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path>
+                                        <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path>
+                                        <line x1="10" x2="10" y1="11" y2="17"></line>
+                                        <line x1="14" x2="14" y1="11" y2="17"></line>
+                                    </svg>
+                                </label>
+                            </div>
+                            <p class="tovar-description">
+                                <span class="circle"></span>
+                                В наличии</p>
+                            <span class="tovar-price">18 990 ₽</span>
+                            <div class="quantity-control">
+                                <button class="quantity-btn">−</button>
+                                <span class="quantity">1</span>
+                                <button class="quantity-btn">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tovar-card">
+                        <img src="assets/media/images/CCMSuperTacks.png" alt="Товар 1" class="tovar-image">
+                        <div class="tovar-info-block">
+                            <div class="name-and-delete">
+                                <h3 class="tovar-name">Коньки CCM Super Tacks AS3 Pro</h3>
+                                <label class="delete-container">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-trash2 h-5 w-5"
+                                        data-component-path="src/pages/CartPage.tsx" data-component-name="Trash2"
+                                        data-component-line="245" data-component-file="CartPage.tsx"
+                                        data-component-content="%7B%22className%22%3A%22h-5%20w-5%22%7D">
+                                        <path d="M3 6h18"></path>
+                                        <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path>
+                                        <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path>
+                                        <line x1="10" x2="10" y1="11" y2="17"></line>
+                                        <line x1="14" x2="14" y1="11" y2="17"></line>
+                                    </svg>
+                                </label>
+                            </div>
+                            <p class="tovar-description">
+                                <span class="circle"></span>
+                                В наличии</p>
+                            <span class="tovar-price">18 990 ₽</span>
+                            <div class="quantity-control">
+                                <button class="quantity-btn">−</button>
+                                <span class="quantity">1</span>
+                                <button class="quantity-btn">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tovar-card">
+                        <img src="assets/media/images/CCMSuperTacks.png" alt="Товар 1" class="tovar-image">
+                        <div class="tovar-info-block">
+                            <div class="name-and-delete">
+                                <h3 class="tovar-name">Коньки CCM Super Tacks AS3 Pro</h3>
+                                <label class="delete-container">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-trash2 h-5 w-5"
+                                        data-component-path="src/pages/CartPage.tsx" data-component-name="Trash2"
+                                        data-component-line="245" data-component-file="CartPage.tsx"
+                                        data-component-content="%7B%22className%22%3A%22h-5%20w-5%22%7D">
+                                        <path d="M3 6h18"></path>
+                                        <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path>
+                                        <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path>
+                                        <line x1="10" x2="10" y1="11" y2="17"></line>
+                                        <line x1="14" x2="14" y1="11" y2="17"></line>
+                                    </svg>
+                                </label>
+                            </div>
+                            <p class="tovar-description">
+                                <span class="circle"></span>
+                                В наличии</p>
+                            <span class="tovar-price">18 990 ₽</span>
+                            <div class="quantity-control">
+                                <button class="quantity-btn">−</button>
+                                <span class="quantity">1</span>
+                                <button class="quantity-btn">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-another-main-info">
+                <div class="another-main-info">
+                    <div class="another-main-info-head">
+                        <h1>Итого</h1>
+                    </div>
+                    <div class="line l-1"></div>
+                    <div class="tovar-and-price">
+                        <span class="l-span">Товары (3)</span>
+                        <span class="r-span">106 988 ₽</span>
+                    </div>
+                    <div class="delivery-block">
+                        <span class="l-span">Доставка</span>
+                        <span class="r-span">Бесплатно</span>
+                    </div>
+                    <div class="total-price-block">
+                        <span class="total-price">Итого к оплате</span>
+                        <span class="right-total-price">106 988 ₽</span>
+                    </div>
+                    <div class="line"></div>
+                    <button class="Btn">
+                        Оформить заказ
+                        <svg class="svgIcon" viewBox="0 0 576 512">
+                            <path
+                                d="M512 80c8.8 0 16 7.2 16 16v32H48V96c0-8.8 7.2-16 16-16H512zm16 144V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224H528zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm56 304c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm128 0c-13.3 0-24 10.7-24 24s10.7 24 24 24H360c13.3 0 24-10.7 24-24s-10.7-24-24-24H248z">
+                            </path>
+                        </svg>
+                    </button>
+                    <div class="additional-block">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-shield h-4 w-4 mr-1 text-gray-400"
+                                data-component-path="src/pages/CartPage.tsx" data-component-name="Shield"
+                                data-component-line="388" data-component-file="CartPage.tsx"
+                                data-component-content="%7B%22className%22%3A%22h-4%20w-4%20mr-1%20text-gray-400%22%7D">
+                                <path
+                                    d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
+                                </path>
+                            </svg>
+                            Безопасная оплата
+                        </span>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-package h-4 w-4 mr-1 text-gray-400"
+                                data-component-path="src/pages/CartPage.tsx" data-component-name="Package"
+                                data-component-line="392" data-component-file="CartPage.tsx"
+                                data-component-content="%7B%22className%22%3A%22h-4%20w-4%20mr-1%20text-gray-400%22%7D">
+                                <path
+                                    d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z">
+                                </path>
+                                <path d="M12 22V12"></path>
+                                <path d="m3.3 7 7.703 4.734a2 2 0 0 0 1.994 0L20.7 7"></path>
+                                <path d="m7.5 4.27 9 5.15"></path>
+                            </svg>
+                            Гарантия качества
+                        </span>
+                    </div>
+                </div>
+                <!-- Создание блока метода оплаты -->
+                <div class="payment-method-block">
+                    <div class="payment-method-block-head">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-credit-card h-5 w-5 mr-2 text-shop-blue"
+                            data-component-path="src/pages/CartPage.tsx" data-component-name="CreditCard"
+                            data-component-line="481" data-component-file="CartPage.tsx"
+                            data-component-content="%7B%22className%22%3A%22h-5%20w-5%20mr-2%20text-shop-blue%22%7D">
+                            <rect width="20" height="14" x="2" y="5" rx="2"></rect>
+                            <line x1="2" x2="22" y1="10" y2="10"></line>
+                        </svg>
+                        <h1 class="payment-method-block-text">
+                            Способы оплаты
+                        </h1>
+                    </div>
+                    <div class="line"></div>
+                    <div class="cards-block">
+                        <span class="pay-card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <g fill="currentColor">
+                                    <path fill="none" d="M17.4 12.6h1l-.3-1.4v-.4l-.2.4z" />
+                                    <path fill-rule="evenodd"
+                                        d="M2 6.3c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm12.5 3.2c.4 0 .8 0 1.1.2l-.1 1h-.1a2 2 0 0 0-1-.3c-.5 0-.7.3-.7.5s.2.3.7.5c.7.4 1 .8 1 1.3c0 1-.8 1.7-2.2 1.7c-.6 0-1.1-.2-1.4-.3l.2-1h.1c.4.2.7.3 1.2.3c.4 0 .8-.2.8-.5c0-.2-.2-.3-.7-.6c-.5-.2-1.1-.6-1.1-1.3c0-.9 1-1.5 2.2-1.5m3.5 0h1l1 4.8h-1.2l-.2-.7H17l-.3.7h-1.3l1.9-4.4c.1-.3.3-.3.7-.3Zm-6.2 0h-1.3l-.8 4.8H11zm-4.5 3.3l-.1-.7l-.5-2.2c0-.3-.3-.3-.6-.4h-2v.1l1.2.5l.1.2l1.1 4H8l2-4.7H8.7l-1.3 3.2Z"
+                                        clip-rule="evenodd" />
+                                </g>
+                            </svg>
+                            <span class="card-text">Visa</span>
+                        </span>
+                        <span class="pay-card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 576 512">
+                                <path fill="currentColor"
+                                    d="M482.9 410.3c0 6.8-4.6 11.7-11.2 11.7c-6.8 0-11.2-5.2-11.2-11.7s4.4-11.7 11.2-11.7c6.6 0 11.2 5.2 11.2 11.7m-310.8-11.7c-7.1 0-11.2 5.2-11.2 11.7S165 422 172.1 422c6.5 0 10.9-4.9 10.9-11.7c-.1-6.5-4.4-11.7-10.9-11.7m117.5-.3c-5.4 0-8.7 3.5-9.5 8.7h19.1c-.9-5.7-4.4-8.7-9.6-8.7m107.8.3c-6.8 0-10.9 5.2-10.9 11.7s4.1 11.7 10.9 11.7s11.2-4.9 11.2-11.7c0-6.5-4.4-11.7-11.2-11.7m105.9 26.1c0 .3.3.5.3 1.1c0 .3-.3.5-.3 1.1c-.3.3-.3.5-.5.8c-.3.3-.5.5-1.1.5c-.3.3-.5.3-1.1.3c-.3 0-.5 0-1.1-.3c-.3 0-.5-.3-.8-.5c-.3-.3-.5-.5-.5-.8c-.3-.5-.3-.8-.3-1.1c0-.5 0-.8.3-1.1c0-.5.3-.8.5-1.1c.3-.3.5-.3.8-.5c.5-.3.8-.3 1.1-.3c.5 0 .8 0 1.1.3c.5.3.8.3 1.1.5s.2.6.5 1.1m-2.2 1.4c.5 0 .5-.3.8-.3c.3-.3.3-.5.3-.8s0-.5-.3-.8c-.3 0-.5-.3-1.1-.3h-1.6v3.5h.8V426h.3l1.1 1.4h.8zM576 81v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V81c0-26.5 21.5-48 48-48h480c26.5 0 48 21.5 48 48M64 220.6c0 76.5 62.1 138.5 138.5 138.5c27.2 0 53.9-8.2 76.5-23.1c-72.9-59.3-72.4-171.2 0-230.5c-22.6-15-49.3-23.1-76.5-23.1c-76.4-.1-138.5 62-138.5 138.2m224 108.8c70.5-55 70.2-162.2 0-217.5c-70.2 55.3-70.5 162.6 0 217.5m-142.3 76.3c0-8.7-5.7-14.4-14.7-14.7c-4.6 0-9.5 1.4-12.8 6.5c-2.4-4.1-6.5-6.5-12.2-6.5c-3.8 0-7.6 1.4-10.6 5.4V392h-8.2v36.7h8.2c0-18.9-2.5-30.2 9-30.2c10.2 0 8.2 10.2 8.2 30.2h7.9c0-18.3-2.5-30.2 9-30.2c10.2 0 8.2 10 8.2 30.2h8.2v-23zm44.9-13.7h-7.9v4.4c-2.7-3.3-6.5-5.4-11.7-5.4c-10.3 0-18.2 8.2-18.2 19.3c0 11.2 7.9 19.3 18.2 19.3c5.2 0 9-1.9 11.7-5.4v4.6h7.9zm40.5 25.6c0-15-22.9-8.2-22.9-15.2c0-5.7 11.9-4.8 18.5-1.1l3.3-6.5c-9.4-6.1-30.2-6-30.2 8.2c0 14.3 22.9 8.3 22.9 15c0 6.3-13.5 5.8-20.7.8l-3.5 6.3c11.2 7.6 32.6 6 32.6-7.5m35.4 9.3l-2.2-6.8c-3.8 2.1-12.2 4.4-12.2-4.1v-16.6h13.1V392h-13.1v-11.2h-8.2V392h-7.6v7.3h7.6V416c0 17.6 17.3 14.4 22.6 10.9m13.3-13.4h27.5c0-16.2-7.4-22.6-17.4-22.6c-10.6 0-18.2 7.9-18.2 19.3c0 20.5 22.6 23.9 33.8 14.2l-3.8-6c-7.8 6.4-19.6 5.8-21.9-4.9m59.1-21.5c-4.6-2-11.6-1.8-15.2 4.4V392h-8.2v36.7h8.2V408c0-11.6 9.5-10.1 12.8-8.4zm10.6 18.3c0-11.4 11.6-15.1 20.7-8.4l3.8-6.5c-11.6-9.1-32.7-4.1-32.7 15c0 19.8 22.4 23.8 32.7 15l-3.8-6.5c-9.2 6.5-20.7 2.6-20.7-8.6m66.7-18.3H408v4.4c-8.3-11-29.9-4.8-29.9 13.9c0 19.2 22.4 24.7 29.9 13.9v4.6h8.2zm33.7 0c-2.4-1.2-11-2.9-15.2 4.4V392h-7.9v36.7h7.9V408c0-11 9-10.3 12.8-8.4zm40.3-14.9h-7.9v19.3c-8.2-10.9-29.9-5.1-29.9 13.9c0 19.4 22.5 24.6 29.9 13.9v4.6h7.9zm7.6-75.1v4.6h.8V302h1.9v-.8h-4.6v.8zm6.6 123.8c0-.5 0-1.1-.3-1.6c-.3-.3-.5-.8-.8-1.1s-.8-.5-1.1-.8c-.5 0-1.1-.3-1.6-.3c-.3 0-.8.3-1.4.3c-.5.3-.8.5-1.1.8c-.5.3-.8.8-.8 1.1c-.3.5-.3 1.1-.3 1.6c0 .3 0 .8.3 1.4c0 .3.3.8.8 1.1c.3.3.5.5 1.1.8c.5.3 1.1.3 1.4.3c.5 0 1.1 0 1.6-.3c.3-.3.8-.5 1.1-.8s.5-.8.8-1.1c.3-.6.3-1.1.3-1.4m3.2-124.7h-1.4l-1.6 3.5l-1.6-3.5h-1.4v5.4h.8v-4.1l1.6 3.5h1.1l1.4-3.5v4.1h1.1zm4.4-80.5c0-76.2-62.1-138.3-138.5-138.3c-27.2 0-53.9 8.2-76.5 23.1c72.1 59.3 73.2 171.5 0 230.5c22.6 15 49.5 23.1 76.5 23.1c76.4.1 138.5-61.9 138.5-138.4" />
+                            </svg>
+                            <span class="card-text">MasterCard</span>
+                        </span>
+                        <span class="pay-card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    d="M38.5 5.5h-29a4 4 0 0 0-4 4v29a4 4 0 0 0 4 4h29a4 4 0 0 0 4-4v-29a4 4 0 0 0-4-4m-8.064 28.373l-2.1-5.3"
+                                    stroke-width="1.5" />
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    d="m32.336 28.573l-2.5 7.2c-.2.5-.6.8-1.1.8h-.3m-2.036-4.75c0 1.1-.9 2-2 2h0c-1.1 0-2-.9-2-2v-1.3c0-1.1.9-2 2-2h0c1.1 0 2 .9 2 2m0 3.3v-5.3m-10.736 5.3v-8h2.6c1.5 0 2.7 1.2 2.7 2.7s-1.2 2.7-2.7 2.7h-2.6m14.192-7.851V11.427h3.882c2.24 0 4.032 1.791 4.032 4.031s-1.792 4.032-4.032 4.032h-3.882m4.126-.005l3.788 3.887M26.016 11.427v11.945m-15.786 0V11.427l5.973 11.945l5.972-11.945v11.945"
+                                    stroke-width="1.5" />
+                            </svg>
+                            <span class="card-text">Mir</span>
+                        </span>
+                        <span class="pay-card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12.715 21.456v5.088M30.83 15.55l-4.098-2.555m4.098 19.478l-4.098-2.555m0 0v5.089M7.843 12.96v22.08m0 0l13.683-8.221m.334.198V43.5m18.297-10.993l-14.025-8.496m0 0l14.025-8.426m0 0L21.86 4.5m0 39l18.297-10.993l-9.326-.035m0 0l-4.098 2.534L21.86 43.5m0-22.046L7.843 12.96l4.872 8.495m4.098 2.555l-4.098 2.533l-4.872 8.495m18.89-22.045L21.86 4.5v16.954l4.272 2.557m.601-11.017v5.09l-.6 5.927m14.024-8.426l-9.326-.036l-4.098 2.534l-4.873 3.37m-9.145.003l4.098 2.555l9.92 5.906"
+                                    stroke-width="1.5" />
+                            </svg>
+                            <span class="card-text">СБП</span>
+                        </span>
+                        <span class="pay-card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6">
+                                    <path d="M6 18L18 6" />
+                                    <circle cx="16.5" cy="16.5" r="2.5" />
+                                    <circle cx="7.5" cy="7.5" r="2.5" />
+                                </g>
+                            </svg>
+                            <span class="card-text">Рассрочка</span>
+                        </span>
+                        <span class="pay-card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32">
+                                <path fill="currentColor"
+                                    d="M2 7v17h28V7zm4 2h20a2 2 0 0 0 2 2v9a2 2 0 0 0-2 2H6a2 2 0 0 0-2-2v-9a2 2 0 0 0 2-2m10 2c-2.211 0-4 2.016-4 4.5s1.789 4.5 4 4.5s4-2.016 4-4.5s-1.789-4.5-4-4.5m0 2c1.102 0 2 1.121 2 2.5s-.898 2.5-2 2.5s-2-1.121-2-2.5s.898-2.5 2-2.5m-7.5 1a1.5 1.5 0 1 0 .001 3.001A1.5 1.5 0 0 0 8.5 14m15 0a1.5 1.5 0 1 0 .001 3.001A1.5 1.5 0 0 0 23.5 14" />
+                            </svg>
+                            <span class="card-text">Наличные</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="promocode-block">
+                    <div class="promocode-block-head">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tag h-5 w-5 mr-2 text-shop-red"
+                            data-component-path="src/pages/CartPage.tsx" data-component-name="Tag" data-component-line="402"
+                            data-component-file="CartPage.tsx"
+                            data-component-content="%7B%22className%22%3A%22h-5%20w-5%20mr-2%20text-shop-red%22%7D">
+                            <path
+                                d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z">
+                            </path>
+                            <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                        </svg>
+                        <h1 class="promocode-block-head-text">Промокод</h1>
+                    </div>
+                    <div class="line"></div>
+                    <form action="" class="inp-btn">
+                        <input type="text" placeholder="Введите промокод...">
+                        <button type="submit">Применить</button>
+                    </form>
+                    <span class="advice">Попробуйте промокод HOCKEY10 для скидки 10%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="main-info-footer">
+            <div class="main-footer-block">
+                <h2 class="main-footer-title">HockeyPro</h2>
+                <p class="partner">
+                    Ваш надежный партнер в мире
+                    хоккейной экипировки</p>
+            </div>
+            <div class="main-footer-block">
+                <h3 class="contacts">Контакты</h3>
+                <div class="phone-mail-block">
+                    <img src="assets/media/icons/phone.svg" alt="Телефон" class="phone-logo">
+                    <a class="phone-number" href="tel:+1234567890">8 (800) 555-35-35</a>
+                </div>
+                <div class="phone-mail-block">
+                    <img src="assets/media/icons/mail.svg" alt="Почта" class="mail-logo">
+                    <a class="mail-number" href="mailto:info@hockeypro.ru">info@hockeypro.ru</a>
+                </div>
+            </div>
+            <div class="main-footer-block">
+                <h3 class="information">Информация</h3>
+                <nav class="info-nav">
+                    <a href="about.html" class="footer-nav-link">О компании</a>
+                    <a href="#" class="footer-nav-link">Доставка</a>
+                    <a href="#" class="footer-nav-link">Оплата</a>
+                    <a href="contacts.html" class="footer-nav-link">Контакты</a>
+                    <a href="authorization.html" class="footer-nav-link">Авторизация</a>
+                </nav>
+            </div>
+            <div class="main-footer-block social-footer-block">
+                <h3 class="social">Социальные сети</h3>
+                <nav class="social-block">
+                    <a href="#" class="social-link"> <img src="assets/media/icons/facebook.svg" alt="facebook"
+                            class="social-link-img"></a>
+                    <a href="#" class="social-link"> <img src="assets/media/icons/instagram.svg" alt="instagram"
+                            class="social-link-img"></a>
+                    <a href="#" class="social-link"> <img src="assets/media/icons/twitter.svg" alt="twitter"
+                            class="social-link-img"></a>
+                </nav>
+            </div>
+        </div>
+        <p class="all-rights">© 2024 HockeyPro. Все права защищены.</p>
+    </footer>
+
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>

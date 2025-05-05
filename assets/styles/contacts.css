@@ -1,0 +1,93 @@
+
+/* Стилизация основной секции */
+.wrapper {
+    width: 100%;
+    padding: 2vh 3vw;
+    display: flex;
+    flex-direction: column;
+}
+.wrapper-head {
+    color: var(--blue-color--);
+}
+.main-info-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.wrapper-info-block {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.info-head {
+    color: var(--blue-color--);
+    margin-top: 0;
+}
+.info-block {
+    flex: 1 1 40%;
+    padding: 0 15px 15px 0;
+}
+.info h4 {
+    margin-bottom: 0;
+    color: var(--blue-color--);
+}
+.info span {
+    color: var(--link-color--);
+}
+.map-block {
+    flex: 1 1 60%;
+    min-width: 350px;
+}
+/* Стилизация формы отправки сообщения */
+.form-section {
+    width: 100%;
+}
+.form-head {
+    color: var(--blue-color--);
+}
+.form-block {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.input-block {
+    flex: 1 1 80%;
+    padding: 0 15px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.name-email {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+.name-email input {
+    width: 50%;
+    border: 1px solid var(--grey-color--);
+    border-radius: 10px;
+    padding: 10px;
+}
+#theme, #message {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--grey-color--);
+    padding: 10px;
+}
+#message {
+    height: 100px;
+}
+.btn-block {
+    flex: 1 1 20%;
+    display: flex;
+    align-items: end;
+    margin-top: 20px;
+}
+.btn-block button {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--blue-color--);
+    color: var(--white-color--);
+    padding: 10px ;
+}
