@@ -75,6 +75,7 @@ select {
 }
 .tovar-name {
     margin: 0;
+    cursor: pointer;
 }
 .tovar-info-block {
     width: 100%;

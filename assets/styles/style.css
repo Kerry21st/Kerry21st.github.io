@@ -100,6 +100,7 @@
     font-size: 18px;
     font-weight: 700;
     color: var(--black-color--);
+    cursor: pointer;
 }
 .tovar-info-block {
     width: 100%;
@@ -379,7 +380,7 @@
 .feedback {
     flex: 1 1 25%;
     min-width: 300px;
-    background-color: var(--second-grey-color--);
+    background-color: rgba(177, 166, 167, 0.2);
     transition: .3s;
     padding: 20px 30px;
     display: flex;
